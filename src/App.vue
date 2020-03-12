@@ -1,32 +1,55 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+  <div id='app'>
+    <img class="header" :src="require('@/assets/header.png')" alt="">
+    <countdown :end="deadLine"/>
+    <network :links="network" newPage/>
   </div>
 </template>
 
-<style lang="scss">
-#app {
+<script>
+export default {
+  data () {
+    return {
+      deadLine: new Date('2020/05/01 15:00:00').getTime(),
+      network: [
+        { name: 'facebook', url: 'https://facebook.com/muiscasrc', icon: 'fa-facebook-square' },
+        { name: 'messenger', url: 'https://m.me/muiscasrc', icon: 'fa-facebook-messenger' },
+        { name: 'twitter', url: 'https://twitter.com/muiscasrc', icon: 'fa-twitter-square' },
+        { name: 'instagram', url: 'https://instagram.com/muiscasrc', icon: 'fa-instagram-square' }
+      ]
+    }
+  }
+}
+</script>
+
+<style lang='scss'>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  &:after,
+  &:before {
+    @extend *;
+  }
+}
+html,
+body, #app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  width: 100vw;
+  height: 100vh;
+  background: #1a1a1a;
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+#app {
+  flex-direction: column;
+  .header {
+    height: 10rem;
   }
 }
 </style>
