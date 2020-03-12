@@ -4,6 +4,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/club/css/app.5dbb8193.css"
   },
   {
+    "revision": "c9172303cf230058c2b2b146eb4461c9",
+    "url": "/club/favicon.png"
+  },
+  {
     "revision": "cf201b25afd726ffb1182f89db74734a",
     "url": "/club/img/header.cf201b25.png"
   },
@@ -12,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/club/img/logo.82b9c7a5.png"
   },
   {
-    "revision": "ee590dd33570ddd8a72affb5c8fda310",
+    "revision": "65ea1df9d4c3edafb002e6807803d87a",
     "url": "/club/index.html"
   },
   {
