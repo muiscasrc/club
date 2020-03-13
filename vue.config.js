@@ -11,6 +11,13 @@ module.exports = {
       })
     ]
   },
+  pwa: {
+    name: 'Muiscas RC',
+    themeColor: '#1a1a1a',
+    msTileColor: '#1a1a1a',
+    appleMobileWebAppCapable: 'yes',
+    appleMobileWebAppStatusBarStyle: 'black',
+  },
   publicPath: process.env.NODE_ENV === 'production'
     ? '/club/'
     : '/'

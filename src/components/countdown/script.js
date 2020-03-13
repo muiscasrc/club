@@ -5,6 +5,10 @@ export default {
   props: {
     end: {
       type: Number
+    },
+    title: {
+      type: String,
+      default: ''
     }
   },
   data () {

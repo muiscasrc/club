@@ -2,30 +2,43 @@
 
 .count {
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
     font-size:4rem;
     font-family: 'Bungee';
-    &__item {
-        width: 7rem;
-        height: 9rem;
-        margin: 1rem;
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: #d50000;
-        color: #e6e6e6;
-        border-radius: .5rem;
-        box-shadow: 0 2px 4px 0 black;
+    &__title {
+        color: #d50000;
+        font-size: 3rem;
         line-height: 1;
-        &_label {
-            margin-top: 1rem;
-            font-size: 1rem;
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 2rem;
+    }
+    &__wrapper {
+        display:flex;
+        flex-direction: row;
+        &_item {
+            width: 7rem;
+            height: 9rem;
+            margin-right: 1rem;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #d50000;
+            color: #e6e6e6;
+            border-radius: .5rem;
+            box-shadow: 0 2px 4px 0 black;
+            line-height: 1;
+            &:last-child {
+                margin-right: 0;
+            }
+            &--label {
+                margin-top: 1rem;
+                font-size: 1rem;
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+            }
         }
+
     }
 }
