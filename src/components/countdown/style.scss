@@ -16,6 +16,7 @@
     &__wrapper {
         display:flex;
         flex-direction: row;
+        flex-wrap: wrap;
         &_item {
             width: 7rem;
             height: 9rem;
