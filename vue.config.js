@@ -5,9 +5,9 @@ module.exports = {
   configureWebpack: {
     plugins: [
       new PrerenderSPAPlugin({
-        staticDir: path.join(__dirname, 'dist'),
+        staticDir: path.join(__dirname, 'docs'),
         // Required - Routes to render.
-        routes: ['/', '/about', '/some/deep/nested/route'],
+        routes: ['/']
       })
     ]
   },
@@ -16,7 +16,7 @@ module.exports = {
     themeColor: '#1a1a1a',
     msTileColor: '#1a1a1a',
     appleMobileWebAppCapable: 'yes',
-    appleMobileWebAppStatusBarStyle: 'black',
+    appleMobileWebAppStatusBarStyle: 'black'
   },
   publicPath: process.env.NODE_ENV === 'production'
     ? '/club/'
