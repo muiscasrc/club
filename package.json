@@ -33,9 +33,9 @@
     "eslint-plugin-standard": "^4.0.1",
     "eslint-plugin-vue": "^6.2.2",
     "node-sass": "^4.13.1",
-    "obfuscator-loader": "^1.1.2",
     "prerender-spa-plugin": "^3.4.0",
     "sass-loader": "^8.0.2",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "webpack-obfuscator": "^0.25.5"
   }
 }

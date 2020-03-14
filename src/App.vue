@@ -34,7 +34,7 @@
 export default {
   data () {
     return {
-      initTraining: new Date('2020/04/13 19:30:00').getTime(),
+      initTraining: new Date('2020/04/01 19:30:00').getTime(),
       deadLine: {
         time: new Date('2020/04/09 12:00:00').getTime(),
         title: 'Pronto...'

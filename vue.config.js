@@ -1,5 +1,6 @@
 const path = require('path')
 const PrerenderSPAPlugin = require('prerender-spa-plugin')
+const JavaScriptObfuscator = require('webpack-obfuscator')
 
 module.exports = {
   configureWebpack: {
@@ -15,6 +16,7 @@ module.exports = {
       }]
     },
     plugins: [
+      new JavaScriptObfuscator({}),
       new PrerenderSPAPlugin({
         staticDir: path.join(__dirname, 'docs'),
         // Required - Routes to render.
