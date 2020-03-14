@@ -77,7 +77,7 @@ body, #app {
   flex: 1;
   width: 100%;
   height: 100%;
-  background: #e6e6e6;
+  background: #1a1a1a;
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 

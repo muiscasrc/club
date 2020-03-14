@@ -1,4 +1,4 @@
-importScripts("/club/precache-manifest.5ca8478b5dcfa41ec8ef0a7097a040b2.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+importScripts("/club/precache-manifest.e8873bcb4a7a6c3b546841b15b170ae9.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 /* eslint-disable prefer-promise-reject-errors */
 // This is the service worker with the Advanced caching
