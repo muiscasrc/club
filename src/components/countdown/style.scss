@@ -17,10 +17,12 @@
         display:flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
         &_item {
             width: 7rem;
             height: 9rem;
-            margin-right: 1rem;
+            margin: 1rem;
             display:flex;
             flex-direction: column;
             justify-content: center;
@@ -30,9 +32,6 @@
             border-radius: .5rem;
             box-shadow: 0 2px 4px 0 black;
             line-height: 1;
-            &:last-child {
-                margin-right: 0;
-            }
             &--label {
                 margin-top: 1rem;
                 font-size: 1rem;
