@@ -1,52 +1,34 @@
-importScripts("/club/precache-manifest.ba84afcf136e546eef9e6d618fc415cf.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+/**
+ * Welcome to your Workbox-powered service worker!
+ *
+ * You'll need to register this file in your web app and you should
+ * disable HTTP caching for this file too.
+ * See https://goo.gl/nhQhGp
+ *
+ * The rest of the code is auto-generated. Please don't update this file
+ * directly; instead, make changes to your Workbox build configuration
+ * and re-run your build process.
+ * See https://goo.gl/2aRDsh
+ */
 
-var CACHE = 'cache-update-and-refresh'
+importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
-self.addEventListener('install', function (evt) {
-  console.log('The service worker is being installed.')
-  evt.waitUntil(caches.open(CACHE).then(function (cache) {
-    cache.addAll([
-      './index.html',
-      './js',
-      './css',
-      './img'
-    ])
-  }))
-})
-self.addEventListener('fetch', function (evt) {
-  console.log('The service worker is serving the asset.')
-  evt.respondWith(fromCache(evt.request))
-  evt.waitUntil(
-    update(evt.request)
-      .then(refresh))
-})
+importScripts(
+  "/club/precache-manifest.ba84afcf136e546eef9e6d618fc415cf.js"
+);
 
-function fromCache (request) {
-  return caches.open(CACHE).then(function (cache) {
-    return cache.match(request)
-  })
-}
+workbox.core.setCacheNameDetails({prefix: "muiscasrc"});
 
-function update (request) {
-  return caches.open(CACHE).then(function (cache) {
-    return fetch(request).then(function (response) {
-      return cache.put(request, response.clone()).then(function () {
-        return response
-      })
-    })
-  })
-}
+self.addEventListener('message', (event) => {
+  if (event.data && event.data.type === 'SKIP_WAITING') {
+    self.skipWaiting();
+  }
+});
 
-function refresh (response) {
-  return self.clients.matchAll().then(function (clients) {
-    clients.forEach(function (client) {
-      var message = {
-        type: 'refresh',
-        url: response.url,
-        eTag: response.headers.get('ETag')
-      }
-      client.postMessage(JSON.stringify(message))
-    })
-  })
-}
-
+/**
+ * The workboxSW.precacheAndRoute() method efficiently caches and responds to
+ * requests for URLs in the manifest.
+ * See https://goo.gl/S9QRab
+ */
+self.__precacheManifest = [].concat(self.__precacheManifest || []);
+workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
