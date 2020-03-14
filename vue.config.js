@@ -3,6 +3,17 @@ const PrerenderSPAPlugin = require('prerender-spa-plugin')
 
 module.exports = {
   configureWebpack: {
+    module: {
+      rules: [{
+        test: /\.js$/,
+        include: [path.resolve(__dirname, './docs/js')],
+        enforce: 'post',
+        use: {
+          loader: 'obfuscator-loader',
+          options: {}
+        }
+      }]
+    },
     plugins: [
       new PrerenderSPAPlugin({
         staticDir: path.join(__dirname, 'docs'),
@@ -26,7 +37,6 @@ module.exports = {
       favicon32: 'img/icons/icon.png'
     }
   },
-  publicPath: process.env.NODE_ENV === 'production'
-    ? '/club/'
-    : '/'
+  publicPath: process.env.NODE_ENV === 'production' ?
+    '/club/' : '/'
 }
