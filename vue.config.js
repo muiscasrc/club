@@ -16,7 +16,11 @@ module.exports = {
     themeColor: '#1a1a1a',
     msTileColor: '#1a1a1a',
     appleMobileWebAppCapable: 'yes',
-    appleMobileWebAppStatusBarStyle: 'black'
+    appleMobileWebAppStatusBarStyle: 'black',
+    iconPaths: {
+      favicon16: 'img/icons/icon.png',
+      favicon32: 'img/icons/icon.png'
+    }
   },
   publicPath: process.env.NODE_ENV === 'production'
     ? '/club/'
