@@ -6,6 +6,14 @@ export default {
     end: {
       type: Number
     },
+    iconLeft: {
+      type: String,
+      default: ''
+    },
+    iconRight: {
+      type: String,
+      default: ''
+    },
     title: {
       type: String,
       default: ''

@@ -4,8 +4,26 @@ a{
     text-decoration: none;
 }
 .network {
-    &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__title {
+        background: #d50000;
+        padding: .5rem 1rem;
+        display:flex;
+        justify-content: center;
+        align-items: center;
         color: #e6e6e6;
-        margin: 1rem;
+        border-radius: .5rem;
+        box-shadow: 0 1px 2px 0 black;
+    }
+    &__links {
+        &_item {
+            color: #e6e6e6;
+            margin: 1rem;
+            text-shadow: 0 2px 2px black;
+        }
+        margin-bottom: 1rem;
     }
 }

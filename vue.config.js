@@ -4,19 +4,8 @@ const JavaScriptObfuscator = require('webpack-obfuscator')
 
 module.exports = {
   configureWebpack: {
-    module: {
-      rules: [{
-        test: /\.js$/,
-        include: [path.resolve(__dirname, './docs/js')],
-        enforce: 'post',
-        use: {
-          loader: 'obfuscator-loader',
-          options: {}
-        }
-      }]
-    },
     plugins: [
-      new JavaScriptObfuscator({}),
+      // new JavaScriptObfuscator({}),
       new PrerenderSPAPlugin({
         staticDir: path.join(__dirname, 'docs'),
         // Required - Routes to render.
