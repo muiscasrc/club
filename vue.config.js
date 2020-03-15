@@ -1,8 +1,13 @@
 const path = require('path')
 const PrerenderSPAPlugin = require('prerender-spa-plugin')
-const JavaScriptObfuscator = require('webpack-obfuscator')
+// const JavaScriptObfuscator = require('webpack-obfuscator')
 
 module.exports = {
+  devServer: {
+    port: 8888,
+    noInfo: true,
+    compress: true
+  },
   configureWebpack: {
     plugins: [
       // new JavaScriptObfuscator({}),
@@ -28,6 +33,5 @@ module.exports = {
       favicon32: 'img/icons/icon.png'
     }
   },
-  publicPath: process.env.NODE_ENV === 'production' ?
-    '/club/' : '/'
+  publicPath: process.env.NODE_ENV === 'production' ? '/club/' : '/'
 }
