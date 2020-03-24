@@ -37,13 +37,9 @@
             background: #d50000;
             height: 3rem;
             width: 3rem;
-            &:before {
-                display: flex;
-                margin: auto;
-                justify-content: center;
-                align-items: center;
-                height: 100%;
-            }
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         &_label {
             display:flex;

@@ -1,9 +1,7 @@
 <template>
   <div id="countDown" class="count">
     <div class="count__title" v-if="title !== ''">
-      <span :class="['icon__left', iconLeft]" v-if="iconLeft !== ''"/>
       {{title}}
-      <span :class="['icon__right', iconRight]" v-if="iconRight !== ''"/>
     </div>
     <div class="count__wrapper">
       <div class="count__wrapper_item">

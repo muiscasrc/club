@@ -1,4 +1,4 @@
-/* eslint-disable no-console */
+// /* eslint-disable no-console */
 
 import { register } from 'register-service-worker'
 
@@ -14,14 +14,13 @@ if (process.env.NODE_ENV === 'production') {
       console.log('Service worker has been registered.')
     },
     cached () {
-      console.log('Content has been cached for offline use.')
+      console.log('Content has been cached   for offline use.')
     },
     updatefound () {
       console.log('New content is downloading.')
     },
     updated () {
-      alert('New content is available; please refresh.')
-      window.reload()
+      console.log('New content is available; please refresh.')
     },
     offline () {
       console.log('No internet connection found. App is running in offline mode.')

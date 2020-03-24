@@ -7,11 +7,9 @@
       </div>
     </div>
 
-    <div class="app__group" v-if="deadLine.time > new Date()">
+    <div class="app__group" v-if="deadLine.time < new Date()">
       <countdown
         :end="deadLine.time"
-        :iconLeft="'fa fa-newspaper'"
-        :iconRight="'fa fa-hand-point-down'"
         :title="deadLine.title"
       />
     </div>
@@ -21,7 +19,16 @@
       <countdown :end="initTraining" />
     </div>
     <div class="app__group">
-      <network :links="network" :title="'Mas de MuiscasRC en nuestras redes'" newPage />
+      <network
+      :title="'Buscanos en las redes como @muiscasRC'"
+      newPage
+      :sizeIcon="30"
+      :facebook="'muiscasrc'"
+      :twitter="'muiscasrc'"
+      :instagram="'muiscasrc'"
+      :youtube="'muiscasrc'"
+      :linkedin="'muiscasrc'"
+      />
     </div>
   </div>
 </template>
