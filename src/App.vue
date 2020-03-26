@@ -7,7 +7,7 @@
       </div>
     </div>
 
-    <div class="app__group" v-if="deadLine.time < new Date()">
+    <div class="app__group" v-if="deadLine.time > new Date()">
       <countdown
         :end="deadLine.time"
         :title="deadLine.title"
@@ -15,7 +15,11 @@
     </div>
 
     <div class="app__group" v-else>
-      <infotraining :info="infoTraining" :title="infoTraining.title" />
+      <infotraining
+      :title="infoTraining.title"
+      :infoDays="infoTraining.days"
+      :infoTime="infoTraining.time"
+      :infoLocale="infoTraining.localization" />
       <countdown :end="initTraining" />
     </div>
     <div class="app__group">
@@ -65,10 +69,10 @@ export default {
         }
       ],
       infoTraining: {
-        title: 'Proximo Evento',
+        title: 'Proximo Entrenamiento',
         days: [1, 3, 5],
         localization: 'Parque el ensueño',
-        time: new Date('17:00:00')
+        time: '17:00:00'
       }
     }
   }

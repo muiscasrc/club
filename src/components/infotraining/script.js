@@ -11,13 +11,13 @@ export default {
     iconClock
   },
   props: {
-    info: {
-      type: Object
-    },
     title: {
       type: String,
       default: 'Evento'
-    }
+    },
+    infoDays: Array,
+    infoTime: String,
+    infoLocale: String
   },
   data () {
     return {
@@ -31,6 +31,42 @@ export default {
   },
   methods: {},
   computed: {
-    getDate () {}
+    getDate () {
+      const date = new Date()
+      const today = date.getDay()
+      const month = this.monthYear[date.getMonth()]
+      // const year = date.getFullYear()
+      let string = ''
+
+      this.infoDays.forEach((value, key) => {
+        try {
+          if (this.infoDays[key - 1] < today && today <= this.infoDays[key]) {
+            const day = this.daysWeek[value - 1]
+            const dt = date.getDate() - date.getDay() + value
+            const days = dt - date.getDate()
+            let n = ''
+            let s = ''
+
+            if (days > 1) {
+              n = 'n'
+              s = 's'
+            }
+
+            string = `${day}, ${dt} de ${month}: falta${n} ${days} dia${s}`
+          }
+        } catch (err) {
+          return null
+        }
+      })
+      return string
+    },
+    getTime () {
+      // TODO : Add time remaining to next event
+      return this.infoTime
+    },
+    getLocale () {
+      // TODO : Click event to locale into map
+      return this.infoLocale
+    }
   }
 }
