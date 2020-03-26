@@ -15,9 +15,18 @@ export default {
       type: String,
       default: 'Evento'
     },
-    infoDays: Array,
-    infoTime: String,
-    infoLocale: String
+    infoDays: {
+      type: Array,
+      default: []
+    },
+    infoTime: {
+      type: String,
+      default: ''
+    },
+    infoLocale: {
+      type: String,
+      default: ''
+    }
   },
   data () {
     return {

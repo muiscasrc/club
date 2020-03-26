@@ -28,7 +28,7 @@ module.exports = {
       favicon16: 'img/icons/icon.png',
       favicon32: 'img/icons/icon.png'
     }
-  }
-  // },
-  // publicPath: process.env.NODE_ENV === 'production' ? '/club/' : '/'
+  // }
+  },
+  publicPath: process.env.NODE_ENV === 'production' ? '/club/' : '/'
 }

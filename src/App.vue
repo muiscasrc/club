@@ -69,10 +69,10 @@ export default {
         }
       ],
       infoTraining: {
-        title: 'Proximo Entrenamiento',
-        days: [1, 3, 5],
-        localization: 'Parque el ensueño',
-        time: '17:00:00'
+        title: 'Proximo Entrenamiento'
+        // days: [1, 3, 5],
+        // localization: 'Parque el ensueño',
+        // time: '17:00:00'
       }
     }
   }
