@@ -1,5 +1,3 @@
-importScripts("/club/precache-manifest.38f3b8012c3ecf2b6deaaf16dc703f1d.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
-
 var CACHE = 'cache-update-and-refresh'
 
 // On install, cache some resource.
@@ -75,4 +73,3 @@ function refresh (response) {
     })
   })
 }
-
