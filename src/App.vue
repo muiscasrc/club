@@ -41,7 +41,7 @@ export default {
     return {
       initTraining: new Date('2020/05/01 19:30:00').getTime(),
       deadLine: {
-        time: new Date('2020/04/24 12:00:00').getTime(),
+        time: new Date('2020/04/14 00:00:00').getTime(),
         title: 'SUSPENSIÓN\nSARS-COV-2\n'
       },
       messages: [
