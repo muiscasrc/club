@@ -10,7 +10,7 @@
     <div class="app__group" v-if="deadLine.time > new Date()">
       <countdown
         :end="deadLine.time"
-        :title="deadLine.title"
+        :title="getTitleDeadLine"
       />
     </div>
 
@@ -41,11 +41,18 @@
 export default {
   data () {
     return {
-      initTraining: new Date('2020/04/01 19:30:00').getTime(),
+      initTraining: new Date('2020/05/01 19:30:00').getTime(),
       deadLine: {
-        time: new Date('2020/03/24 12:00:00').getTime(),
-        title: ''
+        time: new Date('2020/04/24 12:00:00').getTime(),
+        title: 'SUSPENSIÓN\n☣ SARS-COV-2 ☣\n'
       },
+      messages: [
+        'lavate las manos',
+        'cuida a tu familia',
+        'quedate en casa',
+        'protegete al salir'
+      ],
+      msg: '',
       network: [
         {
           name: 'facebook',
@@ -69,12 +76,23 @@ export default {
         }
       ],
       infoTraining: {
-        title: 'Proximo Entrenamiento'
+        title: 'Proximo Entrenamiento',
         // days: [1, 3, 5],
-        // localization: 'Parque el ensueño',
-        // time: '17:00:00'
+        localization: 'Suspension por SARS-COV-2',
+        time: 'Por definir'
       }
     }
+  },
+  computed: {
+    getTitleDeadLine () {
+      return `${this.deadLine.title}${this.msg}`
+    }
+  },
+  created () {
+    setInterval(() => {
+      const index = Math.floor(Math.random() * (this.messages.length + 1 - 1) + 1)
+      this.msg = this.messages[index - 1]
+    }, 1000)
   }
 }
 </script>
