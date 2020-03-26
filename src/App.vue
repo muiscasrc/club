@@ -44,7 +44,7 @@ export default {
       initTraining: new Date('2020/05/01 19:30:00').getTime(),
       deadLine: {
         time: new Date('2020/04/24 12:00:00').getTime(),
-        title: 'SUSPENSIÓN\n☣ SARS-COV-2 ☣\n'
+        title: 'SUSPENSIÓN\nSARS-COV-2\n'
       },
       messages: [
         'lavate las manos',

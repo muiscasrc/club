@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/club/precache-manifest.4a808f93f59bfad0c7b847e7254d867f.js"
+  "/club/precache-manifest.75dc3cd132eab4cd0b4d9a3afd21e801.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "muiscasrc"});
