@@ -1,4 +1,4 @@
-importScripts("/club/precache-manifest.38f3b8012c3ecf2b6deaaf16dc703f1d.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+importScripts("/club/precache-manifest.2079f693d8dbed16191f4b28f1e2c026.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 var CACHE = 'cache-update-and-refresh'
 
