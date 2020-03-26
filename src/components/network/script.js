@@ -24,10 +24,25 @@ export default {
       type: Number,
       default: 32
     },
-    facebook: String,
-    twitter: String,
-    instagram: String,
-    youtube: String,
-    linkedin: String
+    facebook: {
+      type: String,
+      default: ''
+    },
+    twitter: {
+      type: String,
+      default: ''
+    },
+    instagram: {
+      type: String,
+      default: ''
+    },
+    youtube: {
+      type: String,
+      default: ''
+    },
+    linkedin: {
+      type: String,
+      default: ''
+    }
   }
 }

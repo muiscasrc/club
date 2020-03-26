@@ -30,8 +30,6 @@
       :facebook="'muiscasrc'"
       :twitter="'muiscasrc'"
       :instagram="'muiscasrc'"
-      :youtube="'muiscasrc'"
-      :linkedin="'muiscasrc'"
       />
     </div>
   </div>
@@ -53,28 +51,6 @@ export default {
         'protegete al salir'
       ],
       msg: '',
-      network: [
-        {
-          name: 'facebook',
-          url: 'https://facebook.com/muiscasrc',
-          icon: 'fa-facebook-square'
-        },
-        {
-          name: 'messenger',
-          url: 'https://m.me/muiscasrc',
-          icon: 'fa-facebook-messenger'
-        },
-        {
-          name: 'twitter',
-          url: 'https://twitter.com/muiscasrc',
-          icon: 'fa-twitter-square'
-        },
-        {
-          name: 'instagram',
-          url: 'https://instagram.com/muiscasrc',
-          icon: 'fa-instagram-square'
-        }
-      ],
       infoTraining: {
         title: 'Proximo Entrenamiento',
         // days: [1, 3, 5],
