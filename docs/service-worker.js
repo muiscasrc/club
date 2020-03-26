@@ -1,78 +1,57 @@
 importScripts("/club/precache-manifest.2079f693d8dbed16191f4b28f1e2c026.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
-var CACHE = 'cache-update-and-refresh'
+const cacheName = 'websiteMuiscasRCCache'
 
-// On install, cache some resource.
-self.addEventListener('install', function (evt) {
-  console.log('The service worker is being installed.')
-  // Open a cache and use `addAll()` with an array of assets to add all of them
-  // to the cache. Ask the service worker to keep installing until the
-  // returning promise resolves.
-  evt.waitUntil(caches.open(CACHE).then(function (cache) {
-    cache.addAll([
-      './index.html',
-      './css/',
-      './js',
-      './img/'
-    ])
-  }))
-})
+const urlsToCache = [
+  '/',
+  '/index.html',
+  '/favicon.ico',
+  '/robots.txt',
+  '/manifest.json',
+  '/css/*.css',
+  '/img/*/*',
+  '/js/*.js',
+  '/js/*.map'
+]
 
-// On fetch, use cache but update the entry with the latest contents
-// from the server.
-self.addEventListener('fetch', function (evt) {
-  console.log('The service worker is serving the asset.')
-  // You can use `respondWith()` to answer ASAP...
-  evt.respondWith(fromCache(evt.request))
-  // ...and `waitUntil()` to prevent the worker to be killed until
-  // the cache is updated.
-  evt.waitUntil(
-    update(evt.request)
-    // Finally, send a message to the client to inform it about the
-    // resource is up to date.
-      .then(refresh)
+self.addEventListener('install', event => {
+  self.skipWaiting()
+
+  event.waitUntil(
+    caches.open(cacheName).then(cache => cache.addAll(urlsToCache))
   )
 })
 
-// Open the cache where the assets were stored and search for the requested
-// resource. Notice that in case of no matching, the promise still resolves
-// but it does with `undefined` as value.
-function fromCache (request) {
-  return caches.open(CACHE).then(function (cache) {
-    return cache.match(request)
-  })
-}
+self.addEventListener('activate', event => {
+  event.waitUntil((async () => {
+    const keys = await caches.keys()
+    const jobs = keys.map(key => key !== cacheName ? caches.delete(key) : Promise.resolve())
+    return Promise.all(jobs)
+  })())
+})
 
-// Update consists in opening the cache, performing a network request and
-// storing the new response data.
-function update (request) {
-  return caches.open(CACHE).then(function (cache) {
-    return fetch(request).then(function (response) {
-      return cache.put(request, response.clone()).then(function () {
-        return response
-      })
-    })
-  })
-}
+self.addEventListener('fetch', event => {
+  event.respondWith((async () => {
+    const cachedResponse = await caches.match(event.request)
+    if (cachedResponse) return cachedResponse
 
-// Sends a message to the clients.
-function refresh (response) {
-  return self.clients.matchAll().then(function (clients) {
-    clients.forEach(function (client) {
-      // Encode which resource has been updated. By including the
-      // [ETag](https://en.wikipedia.org/wiki/HTTP_ETag) the client can
-      // check if the content has changed.
-      var message = {
-        type: 'refresh',
-        url: response.url,
-        // Notice not all servers return the ETag header. If this is not
-        // provided you should use other cache headers or rely on your own
-        // means to check if the content has changed.
-        eTag: response.headers.get('ETag')
+    try {
+      const response = await fetch(event.request)
+      return response
+    } catch (err) {
+      const url = new URL(event.request.url)
+
+      const pathname = url.pathname
+      const filename = pathname.substr(1 + pathname.lastIndexOf('/')).split(/\#|\?/g)[0]
+      const extensions = ['.html', '.css', '.js', '.json', '.png', '.ico', '.svg', '.xml']
+
+      if (url.origin === location.origin && !extensions.some(ext => filename.endsWith(ext))) {
+        const cachedIndex = await caches.match('/')
+        if (cachedIndex) return cachedIndex
       }
-      // Tell the client about the update.
-      client.postMessage(JSON.stringify(message))
-    })
-  })
-}
+
+      throw err
+    }
+  })())
+})
 
