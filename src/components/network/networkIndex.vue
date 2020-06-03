@@ -36,6 +36,3 @@
   </div>
 </template>
 <script src="./script.js"></script>
-<style lang="scss">
-@import url("./style.scss");
-</style>
