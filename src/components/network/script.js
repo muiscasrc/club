@@ -1,6 +1,5 @@
-import './style.scss'
-import iconFacebook from 'vue-material-design-icons/FacebookBox'
-import iconTwitter from 'vue-material-design-icons/TwitterBox'
+import iconFacebook from 'vue-material-design-icons/Facebook'
+import iconTwitter from 'vue-material-design-icons/Twitter'
 import iconInstagram from 'vue-material-design-icons/Instagram'
 import iconYoutube from 'vue-material-design-icons/Youtube'
 import iconLinkedin from 'vue-material-design-icons/Linkedin'

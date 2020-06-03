@@ -1,4 +1,3 @@
-import './style.scss'
 import iconCalendar from 'vue-material-design-icons/CalendarBlank'
 import iconMap from 'vue-material-design-icons/MapMarker'
 import iconClock from 'vue-material-design-icons/ClockOutline'
