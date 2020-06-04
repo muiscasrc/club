@@ -36,5 +36,6 @@ module.exports = {
     }
   // }
   },
-  publicPath: process.env.NODE_ENV === 'production' ? '/club/' : '/'
+  publicPath: process.env.NODE_ENV === 'production' ? '/club/' : '/',
+  runtimeCompiler: true
 }
