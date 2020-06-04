@@ -1,0 +1,389 @@
+[33mcommit cb5c1cd958f00c430b54d7c84bd8d3e8654c4cb3[m[33m ([m[1;36mHEAD -> [m[1;32mdev[m[33m)[m
+Author: devemloop <devemloop@gmail.com>
+Date:   Wed Jun 3 15:34:14 2020 -0500
+
+    Fix .gitignore
+
+[33mcommit 178d1e268dbe12d322fb2079ff187f4aa49c7aad[m
+Author: devemloop <devemloop@gmail.com>
+Date:   Wed Jun 3 15:33:02 2020 -0500
+
+    Update
+
+[33mcommit f9e5218df1023d136923520a572ef149a685ebf9[m[33m ([m[1;31morigin/dev[m[33m)[m
+Author: devemloop <devemloop@gmail.com>
+Date:   Wed Jun 3 15:27:52 2020 -0500
+
+    Update .gitignore
+
+[33mcommit 4076c5588f50f377671454d1be864b7df8fd5890[m
+Author: devemloop <devemloop@gmail.com>
+Date:   Wed Jun 3 15:22:21 2020 -0500
+
+    Update folder system
+
+[33mcommit 24e0a4ff8f29e0b8bdb9e2e47625177a72df7f71[m
+Author: devemloop <devemloop@gmail.com>
+Date:   Wed Jun 3 08:59:15 2020 -0500
+
+    Fix name in Blog view
+
+[33mcommit 806f82011aab7491e84f9b28d179da8acc421b5f[m[33m ([m[1;31mupstream/master[m[33m, [m[1;32mmaster[m[33m)[m
+Author: devemloop <devemloop@gmail.com>
+Date:   Wed Jun 3 08:43:47 2020 -0500
+
+    Initialize devemloop colaboration
+
+[33mcommit 63babfdf751936fcb46961d8329c8968e657b299[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Thu Mar 26 18:29:37 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit 589ec10d69fbcc81869ac45c67b4971aae0bd970[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Thu Mar 26 18:26:32 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit 5e7f36eb37dc9765519a7f3b86aa1d06e9b52ede[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Thu Mar 26 18:18:47 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit 2d81661636e55a313a302e56b92379b85542be32[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Thu Mar 26 18:16:37 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit b323fca67724464432a08d358b0711243a876201[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Thu Mar 26 18:08:24 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit a9d5cde05862b75efeefb44d450d3387620508cb[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Thu Mar 26 18:04:34 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit ddbe0aed110ba94d9cbf3b5c7a5ed1986e83d5a1[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Thu Mar 26 17:54:43 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit 2f4a632c3862a40322916cba325a2f58085af6fa[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Thu Mar 26 17:53:29 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit e2747c05ff0ef9d31284ce8a2205e90ac52a5079[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Thu Mar 26 17:35:53 2020 -0500
+
+    website  MuiscasRC's
+
+[33mcommit 9128fc9ed9d81baa2a811f35cebd619997ac991c[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Thu Mar 26 17:35:22 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit b3b9a7f6d3c1c6c8cf25a46a7acc12a9b1607670[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Thu Mar 26 17:32:29 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit d58920099c1be2f195aa9e1741114466ddfa1e0b[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Thu Mar 26 17:30:21 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit e3e1d7b366800f3d04d8c52bd3a962ed5604a1c6[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Thu Mar 26 16:07:11 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit bb12d4def14caf124e470579bfebc7d835612bed[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Thu Mar 26 15:58:09 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit 2cc80b5e553666d2674484f14c57cc0ea72aa340[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Tue Mar 24 11:30:56 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit 636a1fc2d69765d819023288fbf82c4af2126698[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Sun Mar 15 14:05:08 2020 -0500
+
+    website MusicasRC's
+
+[33mcommit b543238df647ffb97a3a6e7edfbf817fd0f69392[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Sun Mar 15 09:27:01 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit e3042793f7c63175c75685eb9a44c7169d4e3223[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Sat Mar 14 17:55:03 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit a872c595d505d37dabc2e49aa0faf488c50d2358[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Sat Mar 14 17:51:17 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit 06ddcac80f2e91446609854bd3a863ff335246cd[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Sat Mar 14 17:48:12 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit 8ee5c9bc175faf004f8427a6b243d089a7e279b1[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Sat Mar 14 17:41:05 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit 4ba9f3b97312a1fe8015da7ab59a5a5dc45e0ff7[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Sat Mar 14 11:58:12 2020 -0500
+
+    website MuisacsRC's
+
+[33mcommit 952e02ea6c6f93f73df353f7d45a14b8180c9a88[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Sat Mar 14 11:17:11 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit 69dabe980babb3d2ccdbb3b8932a0b6ab32a4b7b[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Sat Mar 14 10:54:23 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit 70d6d3f741aa42d1020985315f1cf9416a9219f8[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Sat Mar 14 10:48:48 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit 67e6a197beb33ca143a691abc5816f5e50dd6b5b[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Sat Mar 14 10:47:41 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit aa23e261cdae808abd257767e9bc2c92fbb5bd5a[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Sat Mar 14 10:35:42 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit 7c8a280c9c67d97af6076493d42afca8902873a0[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Sat Mar 14 10:33:57 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit 7d29772fb23fe0ae816d9b9d3278173ccffe6346[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Sat Mar 14 10:19:16 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit ef23f2ce948e0daf6dd75a95dcfddb22e40bae12[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Sat Mar 14 10:11:57 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit 2d20d13ed0c552bc3e9d0e5576c824b65a18786a[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Sat Mar 14 10:06:06 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit 478151487d533c6842db9c41352a36f68c90546f[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Sat Mar 14 09:46:31 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit b9f09b123d1d17908580345a53e6b28ca56390a0[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Sat Mar 14 09:24:38 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit ade6cb13f5e1eda52cf7d15b7554d2d016804651[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Sat Mar 14 09:23:53 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit ec7c082cad55d6ffc5407a251da8cf316ba83071[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Sat Mar 14 09:20:15 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit 9a5c01ca7c15994671c62645f16e13e286e55157[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Sat Mar 14 09:15:12 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit a6ecb84abbac4f2726fb9bafc1a7b4f90e1f3054[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Sat Mar 14 09:11:08 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit 778c163b85e7b38fc7fdd187980eea920f5b7895[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Sat Mar 14 09:09:02 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit 2b88eb1a8206c2008f4729f62c49c78c148788f6[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Sat Mar 14 08:55:37 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit 5e6d762a09d54c0534d0227da7fdb9b1685b79f5[m
+Author: muiscasrc <62106271+muiscasrc@users.noreply.github.com>
+Date:   Fri Mar 13 20:50:03 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit 9d58a32907016950136d8a8b6b84370252bc0099[m
+Author: muiscasrc <62106271+muiscasrc@users.noreply.github.com>
+Date:   Fri Mar 13 20:41:18 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit 52f93e1f90716daef812273b480d2f94f21e6e2b[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Fri Mar 13 16:35:00 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit 0b0a1b71ca5ff46dca83adf02440add37109a5c7[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Fri Mar 13 16:31:09 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit 27a2b8b18617980d283d7f06b729a4b0f01e715b[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Fri Mar 13 16:28:02 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit a4078f3f05b08aeb74e32195730ba75d55c6fbeb[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Fri Mar 13 15:42:25 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit 2a692e2ac90024c808bd7237b681c5e6bd03af8e[m
+Author: muiscasrc <62106271+muiscasrc@users.noreply.github.com>
+Date:   Thu Mar 12 19:30:15 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit 544eac1292d0cd2401a9b52cb2e394a445a39fbb[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Thu Mar 12 16:30:08 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit 38807d727aec0ca84a23ff7a36eaf20916f0f080[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Thu Mar 12 16:26:28 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit 1f4eea2ea1937d4b180f095e31c94c512cad2cdc[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Thu Mar 12 16:10:12 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit be140d0e2654da0cbb0ae1fc2b11b215c21551f9[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Thu Mar 12 11:51:08 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit 27d8b0797bb0370893c12fa32615b75d9160eb1a[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Thu Mar 12 11:49:42 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit 4f2481d09cbc7f1a58e3645a5c2368c7305c3284[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Thu Mar 12 11:46:43 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit 67ee68f0e4292591979b0c517c526abb412e41e5[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Thu Mar 12 11:33:30 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit ef5d7540774e4ef1f35c9235108ad15a3d979e42[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Thu Mar 12 11:31:11 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit aa7de511cbeed67dc7536c1840e097fbff7b1844[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Thu Mar 12 11:25:37 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit 6ce59d3cf5adddfad413bdd65ce0282a442f7a1f[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Thu Mar 12 11:17:23 2020 -0500
+
+    website MuiscasRc's
+
+[33mcommit 30b84d61021d0e9ceb37f289b724fe34c5fb1a5f[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Thu Mar 12 11:15:09 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit 21d5f9a9522f0844bf7eb05e96a13d190d14f4c0[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Thu Mar 12 11:03:35 2020 -0500
+
+    website MuiscasRC's
+
+[33mcommit 03265f2732ebb85e7db7cef4b153742098d493db[m
+Author: Edwin Marroquin devem <devemloop@gmail.com>
+Date:   Thu Mar 12 10:54:59 2020 -0500
+
+    website muiscasrc's
