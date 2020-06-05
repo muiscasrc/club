@@ -1,10 +1,13 @@
 <template>
   <nav class="nav">
-    <router-link
+    <router-link class="nav__link"
       v-for="(r, ri, rk) in r"
       :to="r.path"
       :key="rk"
-    > {{r.name}} </router-link>
+    >
+      <component :is="r.icon" class="nav__link_icon"/>
+      <span class="nav__link_label">{{r.name}}</span>
+    </router-link>
   </nav>
 </template>
 
@@ -22,6 +25,3 @@ export default {
   }
 }
 </script>
-
-<style lang="css" scoped>
-</style>

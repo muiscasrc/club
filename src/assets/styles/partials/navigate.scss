@@ -2,4 +2,25 @@
 	background: #d50000;
 	display:flex;
 	flex-direction: column;
+	width: 16rem;
+	&__link {
+		height: 3rem;
+		border-bottom: 1px solid rgba(#333333, .1);
+		display:flex;
+		flex-direction: row;
+		align-items:center;
+		&_icon {
+			width: 3rem;
+			height: 3rem;
+			display:flex;
+			justify-content: center;
+			align-items: center;
+		}
+		&_label {
+			flex:1;
+			height: 100%;
+			display:flex;
+			align-items:center;
+		}
+	}
 }

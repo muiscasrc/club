@@ -1,13 +1,17 @@
-const routeOptions = [
-  { path: '/', name: 'Home' },
-  { path: '/blog', name: 'Blog' }
-]
+import HomeIcon from 'vue-material-design-icons/Home.vue'
+import BlogIcon from 'vue-material-design-icons/Post.vue'
 
-const routes = routeOptions.map(route => {
-  return {
-    ...route,
-    component: () => import(/* webpackChunkName: "[request]" */ `../views/${route.name}.vue`)
+const routes = [
+  {
+    path: '/',
+    name: 'Home',
+    icon: HomeIcon
+  },
+  {
+    path: '/blog',
+    name: 'Blog',
+    icon: BlogIcon
   }
-})
+]
 
 export default routes
