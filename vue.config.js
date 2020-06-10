@@ -31,8 +31,8 @@ module.exports = {
       // ...other Workbox options...
     },
     iconPaths: {
-      favicon16: 'img/icons/icon.png',
-      favicon32: 'img/icons/icon.png'
+      favicon16: 'icon.png',
+      favicon32: 'icon.png'
     }
   // }
   },

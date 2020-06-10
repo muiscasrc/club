@@ -1,9 +1,10 @@
 <template>
   <header class="header">
-    <img class="header" :src="require('@/assets/header.png')" alt="muiscas rugby club" />
+    <!-- <div class="header__img"> -->
+      <!-- <MuiscasLogo label :letters="colorScheme.uiscas" :letter="colorScheme.m" :corn="colorScheme.corn" /> -->
+    <!-- </div> -->
   </header>
 </template>
-
 <script>
 export default {
 
@@ -11,11 +12,13 @@ export default {
 
   data () {
     return {
-
+      colorScheme: {
+        corn: '#e6e6e6',
+        m: '#1a1a1a',
+        uiscas: '#e6e6e6'
+      }
     }
   }
 }
-</script>
 
-<style lang="css" scoped>
-</style>
+</script>

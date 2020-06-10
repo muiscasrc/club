@@ -1,12 +1,11 @@
 <template>
-  <main class="main">
-    <router-view class="main__view" />
-  </main>
+  <h1>School Rugby XV</h1>
 </template>
+
 <script>
 export default {
 
-  name: 'MainPartial',
+  name: 'SchoolRugbyXV',
 
   data () {
     return {
@@ -14,5 +13,4 @@ export default {
     }
   }
 }
-
 </script>

@@ -1,7 +1,6 @@
 <template>
   <div id="countDown" class="count">
-    <div class="count__title" v-if="title !== ''">
-      {{title}}
+    <div class="count__title" v-if="title !== ''" v-html="title">
     </div>
     <div class="count__wrapper">
       <div class="count__wrapper_item">

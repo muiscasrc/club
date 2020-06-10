@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="app">
-<!--     <div class="app__group">
+    <!--     <div class="app__group">
       <div class="app__group_img">
         <img class="header" :src="require('@/assets/header.png')" alt="muiscas rugby club" />
         <span class="header title">news</span>
@@ -14,13 +14,13 @@
       />
     </div> -->
     <!-- <div class="app__group" v-else> -->
-      <headerPartial class="app__header"/>
-      <div class="app__main">
-        <navigatePartial />
-        <mainPartial />
-      </div>
-      <footerPartial class="app__footer"/>
-<!--       <div class="app__group">
+    <navigatePartial class="app__navigate"/>
+    <div class="app__main">
+      <headerPartial class="app__main_header" />
+      <mainPartial class="app__main_content"/>
+      <footerPartial class="app__main_footer" />
+    </div>
+    <!--       <div class="app__group">
         <infotraining
         :title="infoTraining.title"
         :infoDays="infoTraining.days"
@@ -38,12 +38,9 @@
         :instagram="'muiscasrc'"
         />
       </div> -->
-
     <!-- </div> -->
-
   </div>
 </template>
-
 <script>
 export default {
   data () {
@@ -80,4 +77,5 @@ export default {
     }, 1000)
   }
 }
+
 </script>

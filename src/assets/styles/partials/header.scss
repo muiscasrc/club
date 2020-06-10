@@ -1,5 +1,17 @@
 .header {
-	img {
+	min-height: 7rem;
+	display:flex;
+	flex-direction: row;
+	background: #d50000;
+	&__img {
+		width: 14rem;
 		height: 100%;
+		display:flex;
+		justify-content:center;
+		aling-items:center;
+		* {
+			height: 100%;
+			margin: auto;
+		}
 	}
 }
