@@ -1,4 +1,7 @@
 <template>
+  <div class="home__view">
+     <countdown :end="deadLine.time" :title="deadLine.title"/>
+  </div>
   <h1>Home</h1>
 </template>
 
@@ -9,7 +12,15 @@ export default {
 
   data () {
     return {
-
+      deadLine: {
+        time: new Date('2020/04/14 00:00:00').getTime(),
+        title: '<b>👉SUSPENSIÓN👈</b>\nEMERGENCIA SANITARIA\nPRONTO MAS NOTICIAS'
+      }
+    }
+  },
+  computed: {
+    getTitleDeadLine () {
+      return `${this.deadLine.title}${this.msg}`
     }
   }
 }

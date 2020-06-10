@@ -1,0 +1,90 @@
+{
+  "general": {
+    "lang": "unicode",
+    "title": "Music Player",
+    "slogan": "",
+    "description": "Sport data analisys software"
+  },
+  "controls": {
+    "select": "Select...",
+    "save": "Save",
+    "update": "Update",
+    "delete": "Delete"
+  },
+  "windows": {
+    "home": "Home",
+    "configuration-app": "Application settings",
+    "configuration-project": "Project settigns",
+    "documentation": "Documentation",
+    "shortcuts": "Shortcuts"
+  },
+  "file": {
+    "title": "File",
+    "new": "New project",
+    "open": "Open project",
+    "save": "Save project",
+    "export": "Export project",
+    "import": "Import project",
+    "properties": "Project properties",
+    "preferences": "Preferences",
+    "close": "Close project",
+    "quit": "Quit"
+  },
+  "project": {
+    "title": "Project",
+    "copy": "Copy project",
+    "clone": "Clone project",
+    "sync": "Sync project",
+    "delete": "Delete project",
+    "favorites": "Add favorites",
+    "show-favorites": "Show favorites "
+  },
+  "history": {
+    "title": "History",
+    "show": "Show history",
+    "clean": "Clean history",
+    "recents": "Recents projects"
+  },
+  "help": {
+    "title": "Help",
+    "welcome": "Welcome",
+    "documentation": "Documentation",
+    "releases": "Releases",
+    "shortcuts": "Shortcuts",
+    "tutorials": "Tutorials",
+    "network": "Social network",
+    "issues": "Notify problem",
+    "disclaimer": "Disclaimer",
+    "update": "Check update",
+    "about": "About..."
+  },
+  "update": {
+    "update": "Updates",
+    "new": "New update",
+    "version": "Version",
+    "noUpdate": "No update",
+    "messageNoUpdate": "The developers are in the Canary Islands :)",
+    "error": "Download error",
+    "download": "Download"
+  },
+  "internet": {
+    "status": "Status",
+    "online": "Online",
+    "offline": "Offline"
+  },
+  "config" : {
+    "config": "Settings",
+    "general" : "General",
+    "appearance": "Appearance",
+    "security": "Security",
+    "storage": "Storage",
+    "system": "System",
+    "credits": "Credits"
+  },
+  "shortcut": {
+    "open": {
+      "options": "Open setings window",
+      "documentation": "Open documentation window"
+    }
+  }
+}

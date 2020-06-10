@@ -1,0 +1,90 @@
+{
+  "general": {
+    "lang": "utf-8",
+    "title": "Music Player",
+    "slogan": "",
+    "description": "Software de analisis de datos deportivos"
+  },
+  "controls": {
+    "select": "Selecione...",
+    "save": "Guardar",
+    "update": "Actualizar",
+    "delete": "Eliminar"
+  },
+  "windows": {
+    "home": "Inicio",
+    "configuration-app": "Configuraciones",
+    "configuration-project": "Configuracion del proyecto",
+    "documentation": "Documentacion",
+    "shortcuts": "Atajos de teclado"
+  },
+  "file": {
+    "title": "Archivo",
+    "new": "Nuevo proyecto",
+    "open": "Abrir proyecto",
+    "save": "Guardar proyecto",
+    "export": "Exportar proyecto",
+    "import": "Importar proyecto",
+    "properties": "Propiedades del proyecto",
+    "preferences": "Preferencias",
+    "close": "Cerrar proyecto",
+    "quit": "Salir"
+  },
+  "project": {
+    "title": "Proyecto",
+    "copy": "Copiar proyecto",
+    "clone": "Clonar proyecto",
+    "sync": "Sincronizar proyecto",
+    "delete": "Eliminar proyecto",
+    "favorites": "Agregar a favoritos",
+    "show-favorites": "Ver favoritos "
+  },
+  "history": {
+    "title": "Historial",
+    "show": "Mostrar historial",
+    "clean": "Borrar historial",
+    "recents": "Proyectos recientes "
+  },
+  "help": {
+    "title": "Ayuda",
+    "welcome": "Bienvenido",
+    "documentation": "Documentacion",
+    "releases": "Notas de version",
+    "shortcuts": "Atajos de teclado",
+    "tutorials": "Tutoriales",
+    "network": "Redes sociales",
+    "issues": "Notificar problema",
+    "disclaimer": "Declaracion de privacidad",
+    "update": "Buscar actualizacion",
+    "about": "Acerca de..."
+  },
+  "update": {
+    "update": "Actualizaciones",
+    "new": "Nueva actualización",
+    "version": "Versión",
+    "messageNoUpdate": "Los desarrolladores están en las islas canarias :)",
+    "noUpdate": "No hay actualizaciónes disponibles",
+    "error": "Error en la descarga",
+    "download": "Descargando"
+  },
+  "internet": {
+    "status": "Estado",
+    "online": "Conectado",
+    "offline": "Desconectado"
+  },
+  "config": {
+    "config": "Configuración",
+    "general": "General",
+    "appearance": "Apariencia",
+    "security": "Seguridad",
+    "storage": "Almacenamiento",
+    "system": "Sistema",
+    "credits": "Creditos"
+  },
+  "shortcut": {
+    "open": {
+      "options": "Abrir ventana de condiguraciones",
+      "documentation": "Abrir ventana de documentación"
+    }
+  }
+}
