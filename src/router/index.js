@@ -4,6 +4,7 @@ import Routes from './routes.js'
 
 Vue.use(VueRouter)
 
+
 const ArrayRoutes = Routes.map(route => {
   return {
     ...route,
@@ -14,6 +15,9 @@ const ArrayRoutes = Routes.map(route => {
 const router = new VueRouter({
   linkExactActiveClass: 'active',
   routes: ArrayRoutes
+
+const router = new VueRouter({
+  routes: Routes
 })
 
 export default router
