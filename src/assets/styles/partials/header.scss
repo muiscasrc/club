@@ -1,17 +1,17 @@
 .header {
-	height: 4rem;
+	min-height: 7rem;
 	display:flex;
 	flex-direction: row;
+	background: #d50000;
 	&__img {
-		width: 16rem;
+		width: 14rem;
 		height: 100%;
 		display:flex;
 		justify-content:center;
 		aling-items:center;
-		// background:red;
 		* {
 			height: 100%;
-			// margin: auto;
+			margin: auto;
 		}
 	}
 }

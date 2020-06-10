@@ -12,6 +12,7 @@ const ArrayRoutes = Routes.map(route => {
 })
 
 const router = new VueRouter({
+  linkExactActiveClass: 'active',
   routes: ArrayRoutes
 })
 

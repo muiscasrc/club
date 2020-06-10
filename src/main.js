@@ -8,8 +8,9 @@ import i18n from './i18n'
 import './registerServiceWorker'
 
 // Automatic import components
-import './partials'
 import './components'
+import './icons'
+import './partials'
 import './views'
 
 // Import scss styles
