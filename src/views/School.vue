@@ -1,11 +1,6 @@
 <template>
   <div class="school__view">
-    <router-link
-    v-for="(c, ci, ck) in masterClass"
-    :key="ck" class="card"
-    :to="`learn/${c.id}`"
-    :style="getBackground(c.id)"
-    :title="c.title">
+    <router-link v-for="(c, ci, ck) in masterClass" :key="ck" class="card" :to="`learn/${c.id}`" :style="getBackground(c.id)" :title="c.title">
       <h2 class="card__title">{{c.title}}</h2>
     </router-link>
   </div>
