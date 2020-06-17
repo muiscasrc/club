@@ -12,7 +12,7 @@ export default {
   data () {
     return {
       deadLine: {
-        time: new Date('2020/04/14 00:00:00').getTime(),
+        time: new Date('2020/03/25   00:00:00').getTime(),
         title: '<b>👉SUSPENSIÓN👈</b>\nEMERGENCIA SANITARIA\nPRONTO MAS NOTICIAS'
       }
     }

@@ -5,14 +5,7 @@
 </template>
 <script>
 export default {
-
-  name: 'MainPartial',
-
-  data () {
-    return {
-
-    }
-  }
+  name: 'MainPartial'
 }
 
 </script>
