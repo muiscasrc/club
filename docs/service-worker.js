@@ -1,11 +1,11 @@
-importScripts("/club/precache-manifest.38f3b8012c3ecf2b6deaaf16dc703f1d.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+importScripts("/club/precache-manifest.2e665981407f3eb3cc32daeff0b6a6e5.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 const cacheName = 'websiteMuiscasRCCache'
 
 const urlsToCache = [
   '/',
   '/index.html',
-  '/favicon.ico',
+  '/favicon.png',
   '/robots.txt',
   '/manifest.json',
   '/css/*.css',

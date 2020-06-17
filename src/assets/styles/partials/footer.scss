@@ -1,0 +1,19 @@
+.footer {
+	background: #d50000;
+	height: 4rem;
+  padding: 0 .5rem;
+  &__org {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    &_link {
+      display: flex;
+      align-items:center;
+      &--icon {
+        height: 2rem;
+        width: auto;
+      }
+    }
+  }
+}

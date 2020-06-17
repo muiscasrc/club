@@ -3,7 +3,7 @@ const cacheName = 'websiteMuiscasRCCache'
 const urlsToCache = [
   '/',
   '/index.html',
-  '/favicon.ico',
+  '/favicon.png',
   '/robots.txt',
   '/manifest.json',
   '/css/*.css',
