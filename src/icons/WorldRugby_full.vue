@@ -36,9 +36,22 @@ export default {
   name: 'WorldRugbyFull',
 
   props: {
-    colorFull: Boolean,
-    colorBlack: Boolean,
-    colorWhite: Boolean,
+    colorBlack: {
+      type: Boolean,
+      default: false
+    },
+    colorWhite: {
+      type: Boolean,
+      default: false
+    },
+    colorGrey: {
+      type: Boolean,
+      default: false
+    },
+    colorSilver: {
+      type: Boolean,
+      default: false
+    },
     color: {
       type: String,
       default: ''
@@ -51,14 +64,18 @@ export default {
     }
   },
   created () {
-    if (this.colorBlack) {
-      this.logo = '#000000'
-    } else if (this.colorWhite) {
-      this.logo = '#ffffff'
-      this.letters = '#ffffff'
+    if (this.colorWhite && this.color === '') {
+      this.letters = this.logo = '#ffffff'
+    } else if (this.colorBlack && this.color === '') {
+      this.letters = this.logo = '#000000'
+    } else if (this.colorGrey && this.color === '') {
+      this.letters = '#1a1a1a'
+      this.logo = '#3a3a3a'
+    } else if (this.colorSilver && this.color === '') {
+      this.letters = '#eeeeee'
+      this.logo = '#dddddd'
     } else if (this.color !== '') {
-      this.logo = this.color
-      this.letters = this.color
+      this.letters = this.logo = this.color
     }
   }
 }

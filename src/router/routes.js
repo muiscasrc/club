@@ -1,8 +1,12 @@
 import HomeIcon from 'vue-material-design-icons/Home.vue'
 import SchoolIcon from 'vue-material-design-icons/School.vue'
-// import BlogIcon from 'vue-material-design-icons/Post.vue'
+import BlogIcon from 'vue-material-design-icons/Post.vue'
 
 const routes = [
+  {
+    path: '*',
+    name: 'NotFound'
+  },
   {
     path: '/',
     name: 'Home',
@@ -10,35 +14,47 @@ const routes = [
     menu: true
   },
   {
-    path: '/shool',
+    path: '/learn',
     name: 'School',
     icon: SchoolIcon,
     menu: true
+    // children: [
+    //   {
+    //     path: '/rugby-xv',
+    //     name: 'SchoolRugbyXV'
+    //   },
+    //   {
+    //     path: '/rugby-7',
+    //     name: 'SchoolRugby7'
+    //   },
+    //   {
+    //     path: '/rugby-league',
+    //     name: 'SchoolRugbyLeague'
+    //   }
+    // ]
   },
+  // Subpages from /shool
   {
-    path: '/schoolrugby7',
+    path: '/learn/rugby_7',
     name: 'SchoolRugby7',
-    icon: SchoolIcon,
     menu: false
   },
   {
-    path: '/schoolrugbyxv',
+    path: '/learn/rugby_xv',
     name: 'SchoolRugbyXV',
-    icon: SchoolIcon,
     menu: false
   },
   {
-    path: '/schoolrugbyleague',
+    path: '/learn/rugby_league',
     name: 'SchoolRugbyLeague',
-    icon: SchoolIcon,
+    menu: false
+  },
+  {
+    path: '/blog',
+    name: 'Blog',
+    icon: BlogIcon,
     menu: false
   }
-
-  // {
-  //   path: '/blog',
-  //   name: 'Blog',
-  //   icon: BlogIcon
-  // }
 ]
 
 export default routes

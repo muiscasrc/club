@@ -6,13 +6,25 @@ Vue.use(VueRouter)
 
 
 const ArrayRoutes = Routes.map(route => {
+  const childs = []
+  if (route.children !== undefined) {
+    route.children.map(child => {
+      childs.push({
+        ...child,
+        component: () => import(/* webpackChunkName: "[request]" */ `../views/${child.name}.vue`)
+      })
+    })
+  }
+
   return {
     ...route,
-    component: () => import(/* webpackChunkName: "[request]" */ `../views/${route.name}.vue`)
+    component: () => import(/* webpackChunkName: "[request]" */ `../views/${route.name}.vue`),
+    children: childs
   }
 })
 
 const router = new VueRouter({
+  mode: 'history',
   linkExactActiveClass: 'active',
   routes: ArrayRoutes
 
