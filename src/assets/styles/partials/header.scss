@@ -1,8 +1,11 @@
 .header {
-	min-height: 7rem;
+	height: 3rem;
 	display:flex;
 	flex-direction: row;
 	background: #d50000;
+  @media(min-width: 48rem){
+    height: 7rem
+  }
 	&__img {
 		width: 14rem;
 		height: 100%;
