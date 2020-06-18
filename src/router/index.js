@@ -11,25 +11,28 @@ const ArrayRoutes = Routes.map(route => {
     route.children.map(child => {
       childs.push({
         ...child,
-        component: () => import(/* webpackChunkName: "[request]" */ `../views/${child.name}.vue`)
+        component: () => import(/* webpackChunkName: "[`${child.name}`]" */ `../views/${child.name}.vue`)
       })
     })
   }
 
   return {
     ...route,
-    component: () => import(/* webpackChunkName: "[request]" */ `../views/${route.name}.vue`),
+    component: () => import(/* webpackChunkName: "[${route.name}]" */ `../views/${route.name}.vue`),
     children: childs
   }
 })
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: 'hash',
+  base: process.env.NOD_ENV === 'production' ? '/club/' : '/',
   linkExactActiveClass: 'active',
   routes: ArrayRoutes
 
 const router = new VueRouter({
   routes: Routes
 })
+
+console.log(router)
 
 export default router

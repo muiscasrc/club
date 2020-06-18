@@ -4,10 +4,6 @@ import BlogIcon from 'vue-material-design-icons/Post.vue'
 
 const routes = [
   {
-    path: '*',
-    name: 'NotFound'
-  },
-  {
     path: '/',
     name: 'Home',
     icon: HomeIcon,
@@ -53,8 +49,17 @@ const routes = [
     path: '/blog',
     name: 'Blog',
     icon: BlogIcon,
-    menu: false
+    menu: true
+  },
+  {
+    path: '/notfound',
+    name: 'NotFound'
+  },
+  {
+    path: '*',
+    redirect: '/notfound'
   }
+
 ]
 
 export default routes
