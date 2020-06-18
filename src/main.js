@@ -25,6 +25,9 @@ Vue.use(VueI18n)
 
 Vue.config.productionTip = false
 
+Vue.config.devtools = true
+Vue.config.performance = true
+
 // eslint-disable-next-line no-unused-vars
 const app = new Vue({
   store,

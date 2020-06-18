@@ -1,10 +1,11 @@
 <template>
-  <div>
-    <pre>
-      <code>
+  <div class="blog__view">
+    <code>
+      <pre>
         {{d}}
-      </code>
-    </pre>
+      </pre>
+    </code>
+    {{p}}
   </div>
 </template>
 
@@ -16,11 +17,13 @@ export default {
 
   data () {
     return {
-      d: undefined
+      d: undefined,
+      p: undefined
     }
   },
   mounted () {
     this.d = this.$router.options
+    this.p = process.env
   }
 }
 </script>
