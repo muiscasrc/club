@@ -4,6 +4,7 @@ import Routes from './routes.js'
 
 Vue.use(VueRouter)
 
+
 const ArrayRoutes = Routes.map(route => {
   const childs = []
   if (route.children !== undefined) {
@@ -27,6 +28,9 @@ const router = new VueRouter({
   base: process.env.NOD_ENV === 'production' ? '/club/' : '/',
   linkExactActiveClass: 'active',
   routes: ArrayRoutes
+
+const router = new VueRouter({
+  routes: Routes
 })
 
 console.log(router)
