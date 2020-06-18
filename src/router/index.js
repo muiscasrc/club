@@ -24,7 +24,7 @@ const ArrayRoutes = Routes.map(route => {
 })
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: 'hash',
   linkExactActiveClass: 'active',
   routes: ArrayRoutes
 
