@@ -8,19 +8,26 @@ module.exports = {
     compress: true
   },
   configureWebpack: {
+    performance: {
+      hints: false
+    },
     optimization: {
-      runtimeChunk: 'single',
       splitChunks: {
         chunks: 'all',
         maxInitialRequests: Infinity,
-        minSize: 0
+        minSize: 0,
+        maxSize: 250000
       }
     },
     plugins: [
       new PrerenderSPAPlugin({
         staticDir: path.join(__dirname, 'docs'),
         // Required - Routes to render.
-        routes: ['/']
+        routes: [
+          '/',
+          '/learn',
+          '/blog'
+        ]
       })
     ]
   },
@@ -42,7 +49,6 @@ module.exports = {
       favicon16: 'icon.png',
       favicon32: 'icon.png'
     }
-  // }
   },
   publicPath: process.env.NODE_ENV === 'production' ? '/club/' : '/',
   runtimeCompiler: true
