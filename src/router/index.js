@@ -11,14 +11,14 @@ const ArrayRoutes = Routes.map(route => {
     route.children.map(child => {
       childs.push({
         ...child,
-        component: () => import(/* webpackChunkName: "[request]" */ `../views/${child.name}.vue`)
+        component: () => import(/* webpackChunkName: "[`${child.name}`]" */ `../views/${child.name}.vue`)
       })
     })
   }
 
   return {
     ...route,
-    component: () => import(/* webpackChunkName: "[request]" */ `../views/${route.name}.vue`),
+    component: () => import(/* webpackChunkName: "[${route.name}]" */ `../views/${route.name}.vue`),
     children: childs
   }
 })

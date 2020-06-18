@@ -12,7 +12,7 @@ module.exports = {
       new PrerenderSPAPlugin({
         staticDir: path.join(__dirname, 'docs'),
         // Required - Routes to render.
-        routes: ['/']
+        routes: ['/club/']
       })
     ]
   },

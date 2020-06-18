@@ -49,7 +49,7 @@ const routes = [
     path: '/blog',
     name: 'Blog',
     icon: BlogIcon,
-    menu: false
+    menu: true
   },
   {
     path: '/notfound',
