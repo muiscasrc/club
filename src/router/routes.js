@@ -4,10 +4,6 @@ import BlogIcon from 'vue-material-design-icons/Post.vue'
 
 const routes = [
   {
-    path: '*',
-    name: 'NotFound'
-  },
-  {
     path: '/',
     name: 'Home',
     icon: HomeIcon,
@@ -54,6 +50,10 @@ const routes = [
     name: 'Blog',
     icon: BlogIcon,
     menu: false
+  },
+  {
+    path: '*',
+    name: 'NotFound'
   }
 ]
 
