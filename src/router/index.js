@@ -25,6 +25,7 @@ const ArrayRoutes = Routes.map(route => {
 
 const router = new VueRouter({
   mode: 'hash',
+  base: process.env.NOD_ENV === 'production' ? '/club/' : '/',
   linkExactActiveClass: 'active',
   routes: ArrayRoutes
 
