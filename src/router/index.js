@@ -33,4 +33,6 @@ const router = new VueRouter({
   routes: Routes
 })
 
+console.log(router)
+
 export default router
