@@ -52,9 +52,14 @@ const routes = [
     menu: false
   },
   {
-    path: '*',
+    path: '/notfound',
     name: 'NotFound'
+  },
+  {
+    path: '*',
+    redirect: '/notfound'
   }
+
 ]
 
 export default routes
