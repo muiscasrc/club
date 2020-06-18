@@ -10,14 +10,14 @@ const ArrayRoutes = Routes.map(route => {
     route.children.map(child => {
       childs.push({
         ...child,
-        component: () => import(/* webpackChunkName: "ViewsChild_[request]" */ `../views/${child.name}.vue`)
+        component: () => import(/* webpackChunkName: "[request]", webpackPrefetch: true */ `@/views/${child.name}.vue`)
       })
     })
   }
 
   return {
     ...route,
-    component: () => import(/* webpackChunkName: "Views_[request]" */ `../views/${route.name}.vue`),
+    component: () => import(/* webpackChunkName: "[request]", webpackPrefetch: true */ `@/views/${route.name}.vue`),
     children: childs
   }
 })
@@ -40,7 +40,21 @@ export default router
 //     },
 //     {
 //       path: '/learn',
-//       component: () => import(/* webpackChunkName: "ViewLearn" */ '@/views/School.vue')
+//       component: () => import(/* webpackChunkName: "ViewLearn" */ '@/views/School.vue'),
+//       children: [
+//         {
+//           path: '/rugby_xv',
+//           component: () => import(/* webpackChunkName: "ViewRugbyXV" */ '@/views/SchoolRugbyXV.vue')
+//         },
+//         {
+//           path: '/rugby_7',
+//           component: () => import(/* webpackChunkName: "ViewRugby7" */ '@/views/SchoolRugby7.vue')
+//         },
+//         {
+//           path: '/rugby_league',
+//           component: () => import(/* webpackChunkName: "ViewRugbyLeague" */ '@/views/SchoolRugbyLeague.vue')
+//         }
+//       ]
 //     },
 //     {
 //       path: '/Blog',

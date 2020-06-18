@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a7ede15922da019b90c4",
-    "url": "/club/css/app.57cb79c2.css"
+    "revision": "57525015d3762d178adc",
+    "url": "/club/css/app~d0ae3f07.57cb79c2.css"
   },
   {
     "revision": "2f98970986677ecb7797422c608a1ccc",
@@ -20,20 +20,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/club/img/schoolrugbyxv.20a4a4dc.jpg"
   },
   {
-    "revision": "fcab05e33ce96d20fbdb782beafd0cc8",
+    "revision": "4bc467fe5047e77bc04dc2d00cb625d6",
     "url": "/club/index.html"
   },
   {
-    "revision": "a7ede15922da019b90c4",
-    "url": "/club/js/app.bb50091b.js"
+    "revision": "57525015d3762d178adc",
+    "url": "/club/js/app~d0ae3f07.c2293bce.js"
   },
   {
-    "revision": "69b6574dd61a5f62cf77",
-    "url": "/club/js/chunk-vendors.cf72bd70.js"
+    "revision": "056663ab9a14a7ad4443",
+    "url": "/club/js/chunk-vendors~253ae210.c17d7598.js"
   },
   {
-    "revision": "fc6d2f0a120673abea62",
-    "url": "/club/js/runtime.eb31e64e.js"
+    "revision": "238a22497d5fe8aa4ac6",
+    "url": "/club/js/chunk-vendors~678f84af.563e20fe.js"
+  },
+  {
+    "revision": "670bb8516f538bc027e8",
+    "url": "/club/js/chunk-vendors~daa565d3.ce254c84.js"
   },
   {
     "revision": "99ab94e9b00909c0c496a32f826a4aef",

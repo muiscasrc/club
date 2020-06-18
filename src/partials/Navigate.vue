@@ -28,9 +28,7 @@
 
 <script>
 /* eslint-disable no-unused-vars */
-import facebook from 'vue-material-design-icons/Facebook.vue'
-import twitter from 'vue-material-design-icons/Twitter.vue'
-import instagram from 'vue-material-design-icons/Instagram.vue'
+
 import routes from '@/router/routes.js'
 
 export default {
@@ -38,9 +36,9 @@ export default {
   name: 'NavigatePartial',
 
   components: {
-    facebook,
-    twitter,
-    instagram
+    facebook: () => import(/* webpackChunkName: "icons" */ 'vue-material-design-icons/Facebook.vue'),
+    twitter: () => import(/* webpackChunkName: "icons" */ 'vue-material-design-icons/Instagram.vue'),
+    instagram: () => import(/* webpackChunkName: "icons" */ 'vue-material-design-icons/Twitter.vue')
   },
   data () {
     return {
