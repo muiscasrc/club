@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f9f873f056909b0dc57e",
+    "revision": "71a0b7a67959a6bf63bb",
     "url": "/club/css/app.57cb79c2.css"
   },
   {
@@ -20,12 +20,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/club/img/schoolrugbyxv.20a4a4dc.jpg"
   },
   {
-    "revision": "9292207631a534cf638bfd4582c9cbe4",
+    "revision": "6d705c58504742f348aabea1e608cc39",
     "url": "/club/index.html"
   },
   {
-    "revision": "f9f873f056909b0dc57e",
-    "url": "/club/js/app.33894a76.js"
+    "revision": "71a0b7a67959a6bf63bb",
+    "url": "/club/js/app.9323a87f.js"
   },
   {
     "revision": "51caa9ce1ed4d3853215",
