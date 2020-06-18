@@ -10,14 +10,26 @@ const ArrayRoutes = Routes.map(route => {
     route.children.map(child => {
       childs.push({
         ...child,
-        component: () => import(/* webpackChunkName: "[request]", webpackPrefetch: true */ `@/views/${child.name}.vue`)
+        component: () => import(
+          /* webpackChunkName: "[request]" */
+          /* webpackMode: "lazy" */
+          /* webpackPrefetch: true */
+          /* webpackPreload: true */
+          `@/views/${child.name}.vue`
+        )
       })
     })
   }
 
   return {
     ...route,
-    component: () => import(/* webpackChunkName: "[request]", webpackPrefetch: true */ `@/views/${route.name}.vue`),
+    component: () => import(
+      /* webpackChunkName: "[request]" */
+      /* webpackMode: "lazy" */
+      /* webpackPrefetch: true */
+      /* webpackPreload: true */
+      `@/views/${route.name}.vue`
+    ),
     children: childs
   }
 })
