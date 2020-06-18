@@ -8,11 +8,19 @@ module.exports = {
     compress: true
   },
   configureWebpack: {
+    optimization: {
+      runtimeChunk: 'single',
+      splitChunks: {
+        chunks: 'all',
+        maxInitialRequests: Infinity,
+        minSize: 0
+      }
+    },
     plugins: [
       new PrerenderSPAPlugin({
         staticDir: path.join(__dirname, 'docs'),
         // Required - Routes to render.
-        routes: ['/club/']
+        routes: ['/']
       })
     ]
   },

@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "620b9963766ab86d8b86",
+    "revision": "a7ede15922da019b90c4",
     "url": "/club/css/app.57cb79c2.css"
   },
   {
@@ -20,16 +20,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/club/img/schoolrugbyxv.20a4a4dc.jpg"
   },
   {
-    "revision": "65a73124eb70d46c3203ffa98212402b",
+    "revision": "fcab05e33ce96d20fbdb782beafd0cc8",
     "url": "/club/index.html"
   },
   {
-    "revision": "620b9963766ab86d8b86",
-    "url": "/club/js/app.14922116.js"
+    "revision": "a7ede15922da019b90c4",
+    "url": "/club/js/app.bb50091b.js"
   },
   {
-    "revision": "bd2ad392b439f2436deb",
-    "url": "/club/js/chunk-vendors.169d45c2.js"
+    "revision": "69b6574dd61a5f62cf77",
+    "url": "/club/js/chunk-vendors.cf72bd70.js"
+  },
+  {
+    "revision": "fc6d2f0a120673abea62",
+    "url": "/club/js/runtime.eb31e64e.js"
   },
   {
     "revision": "99ab94e9b00909c0c496a32f826a4aef",
