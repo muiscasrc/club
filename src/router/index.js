@@ -11,21 +11,20 @@ const ArrayRoutes = Routes.map(route => {
     route.children.map(child => {
       childs.push({
         ...child,
-        component: () => import(/* webpackChunkName: "[`${child.name}`]" */ `../views/${child.name}.vue`)
+        component: () => import(/* webpackChunkName: "ViewsChild_[request]" */ `../views/${child.name}.vue`)
       })
     })
   }
 
   return {
     ...route,
-    component: () => import(/* webpackChunkName: "[${route.name}]" */ `../views/${route.name}.vue`),
+    component: () => import(/* webpackChunkName: "Views_[request]" */ `../views/${route.name}.vue`),
     children: childs
   }
 })
 
 const router = new VueRouter({
   mode: 'hash',
-  base: process.env.NOD_ENV === 'production' ? '/club/' : '/',
   linkExactActiveClass: 'active',
   routes: ArrayRoutes
 
@@ -33,6 +32,25 @@ const router = new VueRouter({
   routes: Routes
 })
 
-console.log(router)
-
 export default router
+
+// const router = new VueRouter({
+//   mode: 'history',
+//   linkExactActiveClass: 'active',
+//   routes: [
+//     {
+//       path: '/',
+//       component: () => import(/* webpackChunkName: "ViewHome" */ '@/views/Home.vue')
+//     },
+//     {
+//       path: '/learn',
+//       component: () => import(/* webpackChunkName: "ViewLearn" */ '@/views/School.vue')
+//     },
+//     {
+//       path: '/Blog',
+//       component: () => import(/* webpackChunkName: "Blog" */ '@/views/Blog.vue')
+//     }
+//   ]
+// })
+
+// export default router
