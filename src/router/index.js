@@ -4,6 +4,7 @@ import Routes from './routes.js'
 
 Vue.use(VueRouter)
 
+
 const ArrayRoutes = Routes.map(route => {
   const childs = []
   if (route.children !== undefined) {
@@ -38,6 +39,9 @@ const router = new VueRouter({
   mode: 'hash',
   linkExactActiveClass: 'active',
   routes: ArrayRoutes
+
+const router = new VueRouter({
+  routes: Routes
 })
 
 export default router
