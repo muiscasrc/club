@@ -1,16 +1,16 @@
 <template>
-  <h1>School Rugby League</h1>
+  <div class="learn_view">
+    <UnderConstruction />
+  </div>
 </template>
-
 <script>
 export default {
 
   name: 'SchoolRugbyLeague',
 
   data () {
-    return {
-
-    }
+    return {}
   }
 }
+
 </script>

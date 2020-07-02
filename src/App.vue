@@ -18,10 +18,10 @@
     </div> -->
     <!-- <div class="app__group" v-else> -->
 
-    <navigatePartial class="app__navigate"/>
+    <navigatePartial class="app__navigate" />
     <div class="app__main">
       <headerPartial class="app__main_header" />
-      <mainPartial class="app__main_content"/>
+      <mainPartial class="app__main_content" />
       <footerPartial class="app__main_footer" />
     </div>
     <!--       <div class="app__group">

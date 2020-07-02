@@ -1,6 +1,7 @@
 import HomeIcon from 'vue-material-design-icons/Home.vue'
 import SchoolIcon from 'vue-material-design-icons/School.vue'
 import BlogIcon from 'vue-material-design-icons/Post.vue'
+import DashboardIcon from 'vue-material-design-icons/Orbit.vue'
 
 const routes = [
   {
@@ -14,20 +15,6 @@ const routes = [
     name: 'School',
     icon: SchoolIcon,
     menu: true
-    // children: [
-    //   {
-    //     path: '/rugby-xv',
-    //     name: 'SchoolRugbyXV'
-    //   },
-    //   {
-    //     path: '/rugby-7',
-    //     name: 'SchoolRugby7'
-    //   },
-    //   {
-    //     path: '/rugby-league',
-    //     name: 'SchoolRugbyLeague'
-    //   }
-    // ]
   },
   // Subpages from /shool
   {
@@ -52,14 +39,41 @@ const routes = [
     menu: true
   },
   {
+    path: '/login',
+    name: 'Login'
+    // icon: BlogIcon,
+    // menu: true
+  },
+  {
     path: '/notfound',
     name: 'NotFound'
   },
   {
     path: '*',
-    redirect: '/notfound'
+    redirect: '/'
+  },
+  {
+    path: '/profile',
+    name: 'Profile',
+    meta: {
+      login: true
+    }
+  },
+  {
+    path: '/dashboard',
+    name: 'dashboard',
+    menu: false
+  },
+  // Access to club administration
+  {
+    path: '/xbXVpc2Nhc3J1Z2J5Y2x1Yg',
+    name: 'xbXVpc2Nhc3J1Z2J5Y2x1Yg',
+    icon: DashboardIcon,
+    menu: false,
+    meta: {
+      login: true
+    }
   }
-
 ]
 
 export default routes
