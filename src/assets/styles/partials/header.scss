@@ -1,20 +1,163 @@
+@import url("https://cdn.materialdesignicons.com/5.3.45/css/materialdesignicons.min.css");
+
 .header {
-	height: 3rem;
-	display:flex;
-	flex-direction: row;
-	background: #d50000;
-  @media(min-width: 48rem){
-    height: 7rem
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #d50000;
+  height: 3rem;
+  position: relative;
+
+  @media(min-width: 48rem) {
+    height: 5rem
   }
-	&__img {
-		width: 14rem;
-		height: 100%;
-		display:flex;
-		justify-content:center;
-		aling-items:center;
-		* {
-			height: 100%;
-			margin: auto;
-		}
-	}
+
+  &__img {
+    width: 14rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    aling-items: center;
+
+    * {
+      height: 100%;
+      margin: auto;
+    }
+  }
+
+  &__login {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 3rem;
+
+    @media(min-width: 48rem) {
+      height: 3rem;
+    }
+
+    color: #e6e6e6;
+    overflow: hidden;
+
+    &_label {
+      font-weight: 900;
+    }
+
+    &_form {
+      height: 100%;
+      // display:none !important;
+      width: 0 !important;
+      overflow: hidder;
+      transition: all linear .2s;
+
+      &.show {
+        // display:flex !important;
+        width: 6rem !important;
+        transition: all linear .2s;
+
+        @media(min-width: 48rem) {
+          width: 7rem !important;
+        }
+      }
+
+      @media(min-width: 48rem) {
+        height: 3rem;
+      }
+    }
+
+    &_button {
+      height: 3rem;
+      // width: 3rem;
+      color: #e6e6e6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+
+      &:hover {
+        color: #d50000;
+        // background: #e6e6e6;
+      }
+    }
+  }
+
+  &__logout {
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    align-items: center;
+    position: relative;
+
+    @media(min-width: 48rem) {
+      margin-right: 1rem;
+    }
+
+    &_label {
+      margin-right: 1rem;
+      padding-left: 1rem;
+    }
+
+    &_img {
+      height: 3rem;
+
+      @media(min-width: 48rem) {
+        height: 4rem;
+      }
+    }
+
+    &_menu {
+      position: absolute;
+      top: calc(100% + .125rem);
+      right: .125rem;
+
+      @media(min-width: 48rem) {
+        top: calc(4rem + .125rem);
+        right: calc(-1rem + .125rem);
+      }
+
+      width: auto;
+      background: #1a1a1a;
+      color: #e6e6e6;
+      z-index: 1;
+      box-shadow: 0 4px 2px -3px rgba(0, 0, 0, .5);
+      overflow: hidden;
+
+      a {
+        color: #e6e6e6
+      }
+
+      &--item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 1rem;
+        cursor: pointer;
+
+        &.user {
+          flex-direction: column;
+
+          &__name {
+            margin-bottom: 1rem;
+          }
+
+          &:hover {
+            background: none;
+            cursor: default;
+          }
+        }
+
+        &:hover {
+          background: rgba(#e6e6e6, .125)
+        }
+
+      }
+    }
+
+    .firebaseui-id-page-callback {
+      display: none;
+    }
+  }
 }

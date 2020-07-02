@@ -1,24 +1,28 @@
 {
-  "general": {
+  "general":
+  {
     "lang": "utf-8",
     "title": "Music Player",
     "slogan": "",
     "description": "Software de analisis de datos deportivos"
   },
-  "controls": {
+  "controls":
+  {
     "select": "Selecione...",
     "save": "Guardar",
     "update": "Actualizar",
     "delete": "Eliminar"
   },
-  "windows": {
+  "windows":
+  {
     "home": "Inicio",
     "configuration-app": "Configuraciones",
     "configuration-project": "Configuracion del proyecto",
     "documentation": "Documentacion",
     "shortcuts": "Atajos de teclado"
   },
-  "file": {
+  "file":
+  {
     "title": "Archivo",
     "new": "Nuevo proyecto",
     "open": "Abrir proyecto",
@@ -30,7 +34,8 @@
     "close": "Cerrar proyecto",
     "quit": "Salir"
   },
-  "project": {
+  "project":
+  {
     "title": "Proyecto",
     "copy": "Copiar proyecto",
     "clone": "Clonar proyecto",
@@ -39,13 +44,15 @@
     "favorites": "Agregar a favoritos",
     "show-favorites": "Ver favoritos "
   },
-  "history": {
+  "history":
+  {
     "title": "Historial",
     "show": "Mostrar historial",
     "clean": "Borrar historial",
     "recents": "Proyectos recientes "
   },
-  "help": {
+  "help":
+  {
     "title": "Ayuda",
     "welcome": "Bienvenido",
     "documentation": "Documentacion",
@@ -58,7 +65,8 @@
     "update": "Buscar actualizacion",
     "about": "Acerca de..."
   },
-  "update": {
+  "update":
+  {
     "update": "Actualizaciones",
     "new": "Nueva actualización",
     "version": "Versión",
@@ -67,12 +75,14 @@
     "error": "Error en la descarga",
     "download": "Descargando"
   },
-  "internet": {
+  "internet":
+  {
     "status": "Estado",
     "online": "Conectado",
     "offline": "Desconectado"
   },
-  "config": {
+  "config":
+  {
     "config": "Configuración",
     "general": "General",
     "appearance": "Apariencia",
@@ -81,8 +91,10 @@
     "system": "Sistema",
     "credits": "Creditos"
   },
-  "shortcut": {
-    "open": {
+  "shortcut":
+  {
+    "open":
+    {
       "options": "Abrir ventana de condiguraciones",
       "documentation": "Abrir ventana de documentación"
     }

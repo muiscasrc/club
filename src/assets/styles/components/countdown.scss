@@ -1,52 +1,51 @@
-@import url('https://fonts.googleapis.com/css?family=Bungee&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Spartan&display=swap');
-
 .count {
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    font-family: 'Spartan', Arial, Helvetica, sans-serif;
-    width: 80%;
-    max-width: 30rem;
-    // text-transform: uppercase;
-    &__title {
-        color: #d50000;
-        font-size: 2rem;
-        margin-bottom: 1rem;
-        line-height: 1.5;
-        text-align: center;
-        white-space: pre-wrap;
-        word-wrap: break-word;
-    }
-    &__wrapper {
-        display:flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        &_item {
-            width: 6rem;
-            height: 8rem;
-            margin: .5rem;
-            display:flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background: #d50000;
-            color: #e6e6e6;
-            border-radius: .5rem;
-            box-shadow: 0 2px 4px 0 black;
-            line-height: 1;
-            font-size: 3rem;
-            font-family: Bungee;
-            &--label {
-                margin-top: 1rem;
-                font-size: 1rem;
-                text-align: center;
-                font-family: 'Spartan', Arial, Helvetica, sans-serif;
-            }
-        }
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: 'Spartan', Arial, Helvetica, sans-serif;
+  width: 80%;
+  max-width: 30rem;
 
+  &__title {
+    color: #d50000;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    text-align: center;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    &_item {
+      width: 6rem;
+      height: 8rem;
+      margin: .5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #d50000;
+      color: #e6e6e6;
+      border-radius: .5rem;
+      box-shadow: 0 2px 4px 0 black;
+      line-height: 1;
+      font-size: 3rem;
+      font-family: Bungee;
+
+      &--label {
+        margin-top: 1rem;
+        font-size: 1rem;
+        text-align: center;
+        font-family: 'Spartan', Arial, Helvetica, sans-serif;
+      }
     }
+  }
 }

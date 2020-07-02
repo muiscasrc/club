@@ -26,9 +26,7 @@ module.exports = {
         staticDir: path.join(__dirname, 'docs'),
         // Required - Routes to render.
         routes: [
-          '/',
-          '/learn',
-          '/blog'
+          '/'
         ]
       })
     ]

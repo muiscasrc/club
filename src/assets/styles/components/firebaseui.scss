@@ -1,0 +1,89 @@
+#header__login_form {
+  display: flex;
+  flex: 1;
+  height: 3rem;
+  align-items: center;
+
+  @media(min-width: 48rem) {
+    height: 3rem;
+  }
+
+  * {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 2.4rem;
+    width: 2.4rem;
+
+    @media(min-width: 48rem) {
+      height: 3rem;
+      width: 3rem;
+    }
+  }
+
+  div {
+    width: auto;
+
+    .firebaseui-card-content {
+      width: auto;
+
+      form {
+        width: auto;
+
+        ul {
+          margin: 0;
+          flex: 1;
+          width: auto;
+          justify-content: space-between;
+
+          li {
+            border-radius: .25rem;
+            overflow: hidden;
+            margin-left: .5rem;
+
+            button {
+              width: 3rem;
+              border: none;
+              cursor: pointer;
+
+              &.mdl-button {
+                width: 2.5rem;
+                height: 2.5rem;
+                background: none !important;
+                color: #e6e6e6;
+
+                &:hover {
+                  background: #e6e6e6 !important;
+                  color: #d50000;
+                }
+
+                ;
+
+                @media(min-width: 48rem) {
+                  height: 3rem;
+                  width: 3rem;
+                }
+
+                &--raised {
+                  box-shadow: none;
+                }
+              }
+
+              .firebaseui-idp-icon {
+                width: 1.5rem;
+                height: 1.5rem;
+              }
+
+              .firebaseui-idp-text {
+                display: none
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
