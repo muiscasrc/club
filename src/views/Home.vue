@@ -2,6 +2,7 @@
   <div class="home__view">
     <countdown :end="deadLine.time" :title="deadLine.title" />
   </div>
+  <h1>Home</h1>
 </template>
 <script>
 export default {
