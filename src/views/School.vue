@@ -12,6 +12,7 @@ export default {
 
   data () {
     return {
+      user: undefined,
       masterClass: [{
         title: 'Rugby XV',
         id: 'rugby_xv'
@@ -25,6 +26,11 @@ export default {
         id: 'rugby_league'
       }
       ]
+    }
+  },
+  mounted () {
+    if (!this.$store.getters.getLoginUser) {
+      // this .$router.push('/')
     }
   },
   methods: {

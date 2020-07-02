@@ -34,45 +34,10 @@ const ArrayRoutes = Routes.map(route => {
   }
 })
 
-const router = new VueRouter({
+var router = new VueRouter({
   mode: 'hash',
   linkExactActiveClass: 'active',
   routes: ArrayRoutes
 })
 
 export default router
-
-// const router = new VueRouter({
-//   mode: 'history',
-//   linkExactActiveClass: 'active',
-//   routes: [
-//     {
-//       path: '/',
-//       component: () => import(/* webpackChunkName: "ViewHome" */ '@/views/Home.vue')
-//     },
-//     {
-//       path: '/learn',
-//       component: () => import(/* webpackChunkName: "ViewLearn" */ '@/views/School.vue'),
-//       children: [
-//         {
-//           path: '/rugby_xv',
-//           component: () => import(/* webpackChunkName: "ViewRugbyXV" */ '@/views/SchoolRugbyXV.vue')
-//         },
-//         {
-//           path: '/rugby_7',
-//           component: () => import(/* webpackChunkName: "ViewRugby7" */ '@/views/SchoolRugby7.vue')
-//         },
-//         {
-//           path: '/rugby_league',
-//           component: () => import(/* webpackChunkName: "ViewRugbyLeague" */ '@/views/SchoolRugbyLeague.vue')
-//         }
-//       ]
-//     },
-//     {
-//       path: '/Blog',
-//       component: () => import(/* webpackChunkName: "Blog" */ '@/views/Blog.vue')
-//     }
-//   ]
-// })
-
-// export default router

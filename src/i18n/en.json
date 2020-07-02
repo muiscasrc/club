@@ -1,24 +1,28 @@
 {
-  "general": {
+  "general":
+  {
     "lang": "unicode",
     "title": "Music Player",
     "slogan": "",
     "description": "Sport data analisys software"
   },
-  "controls": {
+  "controls":
+  {
     "select": "Select...",
     "save": "Save",
     "update": "Update",
     "delete": "Delete"
   },
-  "windows": {
+  "windows":
+  {
     "home": "Home",
     "configuration-app": "Application settings",
     "configuration-project": "Project settigns",
     "documentation": "Documentation",
     "shortcuts": "Shortcuts"
   },
-  "file": {
+  "file":
+  {
     "title": "File",
     "new": "New project",
     "open": "Open project",
@@ -30,7 +34,8 @@
     "close": "Close project",
     "quit": "Quit"
   },
-  "project": {
+  "project":
+  {
     "title": "Project",
     "copy": "Copy project",
     "clone": "Clone project",
@@ -39,13 +44,15 @@
     "favorites": "Add favorites",
     "show-favorites": "Show favorites "
   },
-  "history": {
+  "history":
+  {
     "title": "History",
     "show": "Show history",
     "clean": "Clean history",
     "recents": "Recents projects"
   },
-  "help": {
+  "help":
+  {
     "title": "Help",
     "welcome": "Welcome",
     "documentation": "Documentation",
@@ -58,7 +65,8 @@
     "update": "Check update",
     "about": "About..."
   },
-  "update": {
+  "update":
+  {
     "update": "Updates",
     "new": "New update",
     "version": "Version",
@@ -67,22 +75,26 @@
     "error": "Download error",
     "download": "Download"
   },
-  "internet": {
+  "internet":
+  {
     "status": "Status",
     "online": "Online",
     "offline": "Offline"
   },
-  "config" : {
+  "config":
+  {
     "config": "Settings",
-    "general" : "General",
+    "general": "General",
     "appearance": "Appearance",
     "security": "Security",
     "storage": "Storage",
     "system": "System",
     "credits": "Credits"
   },
-  "shortcut": {
-    "open": {
+  "shortcut":
+  {
+    "open":
+    {
       "options": "Open setings window",
       "documentation": "Open documentation window"
     }
