@@ -1,69 +1,17 @@
 <template>
   <div id="app" class="app">
-
-    <!--     <div class="app__group">
-
-<!--     <div class="app__group">
-      <div class="app__group_img">
-        <img class="header" :src="require('@/assets/header.png')" alt="muiscas rugby club" />
-        <span class="header title">news</span>
-      </div>
-    </div>
-
-    <div class="app__group" v-if="deadLine.time > new Date()">
-      <countdown
-        :end="deadLine.time"
-        :title="getTitleDeadLine"
-      />
-    </div> -->
-    <!-- <div class="app__group" v-else> -->
-
     <navigatePartial class="app__navigate" />
     <div class="app__main">
       <headerPartial class="app__main_header" />
       <mainPartial class="app__main_content" />
       <footerPartial class="app__main_footer" />
     </div>
-    <!--       <div class="app__group">
-
-      <headerPartial class="app__header"/>
-      <div class="app__main">
-        <navigatePartial />
-        <mainPartial />
-      </div>
-      <footerPartial class="app__footer"/>
-<!--       <div class="app__group">
-
-        <infotraining
-        :title="infoTraining.title"
-        :infoDays="infoTraining.days"
-        :infoTime="infoTraining.time"
-        :infoLocale="infoTraining.localization" />
-        <countdown :end="initTraining" />
-      </div>
-      <div class="app__group">
-        <network
-        :title="'Buscanos en las redes como @muiscasRC'"
-        newPage
-        :sizeIcon="30"
-        :facebook="'muiscasrc'"
-        :twitter="'muiscasrc'"
-        :instagram="'muiscasrc'"
-        />
-      </div> -->
-
-    <!-- </div> -->
-
-
-    <!-- </div> -->
-
-
   </div>
 </template>
 <script data-ad-client="ca-pub-9678204557815632" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
 export default {
-  data () {
+  data() {
     return {
       initTraining: new Date('2020/05/01 19:30:00').getTime(),
       deadLine: {
@@ -86,15 +34,16 @@ export default {
     }
   },
   computed: {
-    getTitleDeadLine () {
+    getTitleDeadLine() {
       return `${this.deadLine.title}${this.msg}`
     }
   },
-  created () {
+  created() {
     setInterval(() => {
       const index = Math.floor(Math.random() * (this.messages.length + 1 - 1) + 1)
       this.msg = this.messages[index - 1]
     }, 1000)
   }
 }
+
 </script>

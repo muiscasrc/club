@@ -2,6 +2,7 @@ const path = require('path')
 const PrerenderSPAPlugin = require('prerender-spa-plugin')
 
 module.exports = {
+
   devServer: {
     port: 8888,
     noInfo: true,
@@ -12,7 +13,6 @@ module.exports = {
       hints: false
     },
     optimization: {
-      runtimeChunk: 'multiple',
       minimize: true,
       splitChunks: {
         chunks: 'all',
