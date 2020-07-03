@@ -4,7 +4,6 @@ import Routes from './routes.js'
 
 Vue.use(VueRouter)
 
-
 const ArrayRoutes = Routes.map(route => {
   const childs = []
   if (route.children !== undefined) {
@@ -13,9 +12,6 @@ const ArrayRoutes = Routes.map(route => {
         ...child,
         component: () => import(
           /* webpackChunkName: "[request]" */
-          /* webpackMode: "lazy" */
-          /* webpackPrefetch: true */
-          /* webpackPreload: true */
           `@/views/${child.name}.vue`
         )
       })
@@ -26,9 +22,6 @@ const ArrayRoutes = Routes.map(route => {
     ...route,
     component: () => import(
       /* webpackChunkName: "[request]" */
-      /* webpackMode: "lazy" */
-      /* webpackPrefetch: true */
-      /* webpackPreload: true */
       `@/views/${route.name}.vue`
     ),
     children: childs
@@ -39,9 +32,6 @@ var router = new VueRouter({
   mode: 'hash',
   linkExactActiveClass: 'active',
   routes: ArrayRoutes
-
-const router = new VueRouter({
-  routes: Routes
 })
 
 export default router

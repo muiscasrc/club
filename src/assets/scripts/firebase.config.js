@@ -1,12 +1,12 @@
 const firebaseConfig = {
-  apiKey: 'AIzaSyBHPHPEdzf55Nt6vp0I9BQjsrOl0KhiYzQ',
-  authDomain: 'webmuiscasrc.firebaseapp.com',
-  databaseURL: 'https://webmuiscasrc.firebaseio.com',
-  projectId: 'webmuiscasrc',
-  storageBucket: 'webmuiscasrc.appspot.com',
-  messagingSenderId: '304314444342',
-  appId: '1:304314444342:web:b6525f0ba0755e184c4697',
-  measurementId: 'G-GFVWJR1TLW'
+  apiKey: process.env.VUE_APP_FB_API_KEY,
+  authDomain: process.env.VUE_APP_FB_AUTH_DOMAIN,
+  databaseURL: process.env.VUE_APP_FB_DATABASE_URL,
+  projectId: process.env.VUE_APP_FB_PROJECT_ID,
+  storageBucket: process.env.VUE_APP_FB_STORAGE_BUCKET,
+  messagingSenderId: process.env.VUE_APP_FB_MESSAGING_SENDER_ID,
+  appId: process.env.VUE_APP_FB_APP_ID,
+  measurementId: process.env.VUE_APP_FB_MEASUREMENT_ID
 }
 
 export default firebaseConfig
