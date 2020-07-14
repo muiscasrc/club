@@ -4,11 +4,12 @@ const PrerenderSPAPlugin = require('prerender-spa-plugin')
 module.exports = {
 
   devServer: {
-    port: 8888,
-    noInfo: true,
+    port: 8989,
     compress: true
   },
   configureWebpack: {
+    mode: process.env.production ? 'production' : 'development',
+    devtool: process.env.production ? 'source-maps' : 'eval',
     performance: {
       hints: false
     },
@@ -22,13 +23,13 @@ module.exports = {
       }
     },
     plugins: [
-      new PrerenderSPAPlugin({
-        staticDir: path.join(__dirname, 'docs'),
-        // Required - Routes to render.
-        routes: [
-          '/'
-        ]
-      })
+      // new PrerenderSPAPlugin({
+      //   staticDir: path.join(__dirname, 'docs'),
+      //   // Required - Routes to render.
+      //   routes: [
+      //     '/'
+      //   ]
+      // })
     ]
   },
   pwa: {

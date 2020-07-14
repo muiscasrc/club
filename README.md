@@ -1,29 +1,5 @@
-# website
+# Website MuiscasRC's
 
-## Project setup
-```
-yarn install
-```
+> developed by **Edwin Marroquin** __devemloop__ **<devemloop@gmail.com>**
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Run your unit tests
-```
-yarn test:unit
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Site for use exclusive from MuiscasRC
