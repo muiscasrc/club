@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+
+  &:before,
+  &:after {
+    @extend *
+  }
+}
+
+html {
+  background: #1a1a1a;
+}
+
+html,
+body,
+.app {
+  display: flex;
+  flex-direction: column;
+  color: #e6e6e6;
+  width: 100vw;
+  height: 100vh;
+  font-family: sans-serif, arial, helvetia;
+  font-size: 16px;
+}
+
+.app {
+  &__main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
+img,
+svg {
+  height: 100%;
+  width: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@import './helpers/helpers';
+@import './components/components';
+@import './pages/pages';

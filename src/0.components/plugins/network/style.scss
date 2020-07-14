@@ -1,0 +1,21 @@
+%center-middle {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.network{
+  width: 100%;
+  &__links {
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    &_item{
+      margin-left: .5rem;
+      @extend %center-middle;
+      &--icon {
+        @extend %center-middle;
+      }
+    }
+  }
+}

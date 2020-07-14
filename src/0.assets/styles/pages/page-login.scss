@@ -1,0 +1,88 @@
+.page__login {
+  @extend %center__middle;
+  margin-top: 3rem;
+  font-family: 'Century Gothic';
+
+  &_form {
+    width: 80%;
+    min-width: 20rem;
+    max-width: 30rem;
+    @extend %center__middle;
+    padding-top: 1rem;
+    flex-direction: column;
+    background: radial-gradient(circle farthest-corner at 50% -55%, transparent calc(50% - 1px), #e6e6e6 50%), linear-gradient(#d50000, darken(#d50000, 40));
+    background-size: 150%;
+    background-position: center;
+
+    &--header {
+      @extend %center__middle;
+      flex-direction: column;
+      min-height: 6rem;
+      width: 100%;
+      padding-bottom: 2rem;
+
+      &-image {
+        height: 4rem;
+      }
+
+      &-title {
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: #e6e6e6;
+      }
+    }
+
+    &--input {
+      flex: 1;
+      width: 100%;
+      margin-top: 2rem;
+      padding: 0 2rem;
+
+      label {
+        width: 100%;
+        color: #d50000;
+        font-size: .75rem;
+        display: flex;
+      }
+
+      input {
+        height: 3rem;
+        width: 100%;
+        font-size: 1.25rem;
+        background: #e6e6e6;
+        color: #1a1a1a;
+        border: none;
+        border-bottom: 1px solid #d50000;
+      }
+
+    }
+
+    &--actions {
+      flex: 1;
+      width: 100%;
+      margin: 2rem;
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &-link {
+        color: #d50000;
+      }
+
+      &-button {
+        width: 8rem;
+        height: 1.875rem;
+        font-size: .75rem;
+        text-transform: uppercase;
+        border-radius: .25rem;
+        border: none;
+        background: #d50000;
+        color: #e6e6e6;
+        box-shadow: none;
+      }
+    }
+  }
+}
