@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bc3c6dbfed2a9211deca",
+    "revision": "4c82f3196eac7990c5e2",
     "url": "/club/css/app~._m.ccda66f9.css"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/club/icon.png"
   },
   {
-    "revision": "72d3820513c527aaffe48d8f9b11fa11",
+    "revision": "7207910de5f74a7ee612c4b0984b5227",
     "url": "/club/index.html"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/club/js/Icons~._node_modules_vue-material-design-icons_B.01890f3f.js"
   },
   {
-    "revision": "bc3c6dbfed2a9211deca",
-    "url": "/club/js/app~._m.8abb5ab6.js"
+    "revision": "4c82f3196eac7990c5e2",
+    "url": "/club/js/app~._m.256a1c21.js"
   },
   {
     "revision": "82580581213f12b6c0da",
