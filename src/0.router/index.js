@@ -35,7 +35,7 @@ Vue.use(VueRouter)
 // })
 
 var router = new VueRouter({
-  mode: 'history',
+  mode: 'hash',
   linkActiveClass: '',
   linkExactActiveClass: 'active',
   routes: routes
