@@ -36,7 +36,10 @@
       height: 3rem;
 
       &[href*="login"] {
-        margin-top: auto;
+        margin-top: 1rem;
+        @media (min-width: 48rem) {
+          margin-top: 0;
+        }
       }
     }
 

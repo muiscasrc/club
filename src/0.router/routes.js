@@ -38,6 +38,18 @@ const routes = [
     component: () => import(/* webpackChunkName: "Contact" */ '@/0.pages/web/contactus.vue')
   },
   {
+    path: '/shop',
+    name: 'shop',
+    component: () => import(/* webpackChunkName: "Shop" */ '@/0.pages/web/shop.vue')
+  },
+  {
+    path: '/product/:id?',
+    name: 'product',
+    props: true,
+    menu: false,
+    component: () => import(/* webpackChunkName: "Shop" */ '@/0.pages/web/product.vue')
+  },
+  {
     path: '/login',
     name: 'login',
     component: () => import(/* webpackChunkName: "Login" */ '@/0.pages/web/login.vue')
