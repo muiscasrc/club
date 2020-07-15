@@ -6,7 +6,8 @@
     "login": "ingresa",
     "find": "conocenos",
     "history": "historia",
-    "object": "objetivo"
+    "object": "objetivo",
+    "shop": "tienda"
   },
   "pages": {
     "home": {
@@ -41,6 +42,9 @@
           }
         ]
       }
+    },
+    "shop": {
+      "title": "Tienda Muisca"
     }
   },
   "login": {

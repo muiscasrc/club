@@ -72,9 +72,11 @@
       }
     }
     &--secondary {
+      height: 100%;
       font-size: 1rem;
       color: #e6e6e6;
       flex:1;
+      overflow: hidden;
       overflow-y: auto;
     }
   }
