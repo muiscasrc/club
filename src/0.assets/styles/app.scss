@@ -1,0 +1,68 @@
+* {
+
+  &,
+  &:after,
+  &:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    user-select: none;
+  }
+
+  &::-webkit-scrollbar {
+    width: .5rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(#d50000, .125);
+    border: 1px solid #d50000;
+    border-radius: .5rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: none;
+    // margin: .5rem;
+  }
+}
+
+html {
+  background: #1a1a1a;
+}
+
+html,
+body,
+.app {
+  display: flex;
+  flex-direction: column;
+  color: #e6e6e6;
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif, arial, helvetia;
+  font-size: 16px;
+}
+
+.app {
+  &__main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
+img,
+svg {
+  height: 100%;
+  width: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@import './helpers/helpers';
+@import './components/components';
+@import './pages/pages';

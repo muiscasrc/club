@@ -1,0 +1,8 @@
+.partial__navigate_about {
+ display: flex;
+  border-top: 1px solid #d50000;
+
+  &--item {
+    @extend %navigate__item;
+  }
+}

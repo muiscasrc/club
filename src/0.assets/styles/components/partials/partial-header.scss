@@ -1,0 +1,18 @@
+.partial__header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 6rem;
+  background: linear-gradient(rgba(#1a1a1a,.75),rgba(#1a1a1a,.0));
+  width:100%;
+  display:flex;
+  flex:1;
+  flex-direction: row;
+  align-items:center;
+  padding: 0 2rem;
+  z-index: 1;
+  &_logo {
+    margin-right: auto;
+    height: 3rem;
+  }
+}

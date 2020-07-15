@@ -1,0 +1,18 @@
+<template>
+  <div></div>
+</template>
+<script>
+export default {
+
+  name: 'WebAcademyRugbyBasic',
+
+  data () {
+    return {
+
+    }
+  }
+}
+</script>
+
+<style lang="css" scoped>
+</style>
