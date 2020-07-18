@@ -6,6 +6,13 @@ const routes = [
     component: () => import(/* webpackChunkName: "Home" */ '@/0.pages/web/home.vue')
   },
   {
+    path: '/suscribe',
+    name: 'suscribe',
+    props: true,
+    menu: false,
+    component: () => import(/* webpackChunkName: "Home" */ '@/0.pages/web/suscribe.vue')
+  },
+  {
     path: '/about',
     name: 'about',
     redirect: '/about/findus',

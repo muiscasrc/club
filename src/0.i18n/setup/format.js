@@ -1,7 +1,9 @@
 const dateTimeFormats = {
   en: {
     short: {
-      year: 'numeric', month: 'short', day: 'numeric'
+      year: 'numeric',
+      month: 'short',
+      day: 'numeric'
     },
     long: {
       year: 'numeric',
@@ -14,7 +16,9 @@ const dateTimeFormats = {
   },
   es: {
     short: {
-      year: 'numeric', month: 'short', day: 'numeric'
+      year: 'numeric',
+      month: 'short',
+      day: 'numeric'
     },
     long: {
       year: 'numeric',
@@ -28,4 +32,21 @@ const dateTimeFormats = {
   }
 }
 
-export { dateTimeFormats }
+const numberFormats = {
+  en: {
+    currency: {
+      style: 'currency',
+      currency: 'USD'
+    }
+  },
+  es: {
+    currency: {
+      style: 'currency',
+      currency: 'COP',
+      currencySymbol: '$',
+      minimumFractionDigits: 0
+    }
+  }
+}
+
+export { dateTimeFormats, numberFormats }

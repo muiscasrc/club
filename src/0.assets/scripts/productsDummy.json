@@ -1,0 +1,44 @@
+{
+  "data": {
+    "products": [
+        {
+          "id": 1,
+          "name": "Tee Rugby Offload Flexible Alto Negro",
+          "image":"https://contents.mediadecathlon.com/p1742183/k$aed0baecb34ac524f0babdbd49b46921/tee-rugby-offload-flexible-alto-negro.jpg",
+          "price": "38000",
+          "description": "Su forma aporta una excelente estabilidad del balón, con cualquier posición.",
+          "details": [
+            "UNISEX TODAS LAS EDADES",
+            "9 cm posición alta del balón. 6 cm posición baja del balón.",
+            "Botella/Cuerpo : 100.0% Poliuretano termoplástico"
+          ],
+          "promo": 20
+        },
+        {
+          "id": 2,
+          "name": "Balón De Rugby Offload R300 Talla 5 Negro",
+          "image":"https://contents.mediadecathlon.com/p1603004/k$42abd0579166b86a6c404f106eee9387/balon-de-rugby-offload-r300-talla-5-negro.jpg",
+          "price": "42000",
+          "description": "Este balón es perfecto para los entrenamientos gracias a su agarre y su resistencia, especialmente para principiantes y escuelas de rugby. Balón ideal para trabajar los primeros pases en el rugby",
+          "details": [
+            "La superficie tiene un relieve pronunciado para un excelente agarre del balón.",
+            "Este balón ofrece una trayectoria estable y correcta para la iniciación.",
+            "Costuras cosidas a mano y triple laminado, para proporcionar durabilidad."
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Lote De 4 Conos Essential 30 Cm Naranja",
+          "image":"https://contents.mediadecathlon.com/p1523042/k$6ed4ba51e7142405dc7fcb762bb97239/lote-40-conos-kipsta-f40-essential-rojo-amarillo-gris-negro.jpg",
+          "price": "61000",
+          "description": "Con estos conos estables y resistentes se puede delimitar un área de juego. Gracias a su diseño en forma de flecha, los ejercicios se vuelven más intuitivos.",
+          "details": [
+            "100.0% Polietileno de baja densidad",
+            "Estos conos grandes tienen forma de flecha para indicar la dirección a seguir.",
+            "Conos visibles a una distancia de 50 metros gracias a su color fluorescente."
+          ],
+          "promo": 50
+        }
+      ]
+  }
+}

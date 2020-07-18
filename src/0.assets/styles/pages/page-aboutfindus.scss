@@ -1,19 +1,20 @@
 .page__aboutfindus {
-  @extend %page__about;
+  @extend %page;
 
   &_title {
-    @extend %page__about_title;
+    @extend %page__title;
 
     &--principal {
-      @extend %page__about_title--principal;
+      @extend %page__title_principal;
       margin-bottom: 0;
     }
 
     &--secondary {
-      @extend %page__about_title--secondary;
+      @extend %page__title_secondary;
       display: flex;
       flex: 1;
       flex-direction: column;
+      justify-content: flex-start;
 
       @media (min-width: 48rem) {
         justify-content: center;
@@ -70,6 +71,6 @@
   }
 
   &_navigate {
-    @extend %page__about_navigate
+    @extend %page__navigate
   }
 }

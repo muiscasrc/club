@@ -1,5 +1,5 @@
 .page__shop {
-  @extend %page__about;
+  @extend %page;
   background: #fafafa;
   margin: 0;
   padding-left: 2rem;
@@ -7,17 +7,17 @@
   color: #1a1a1a;
 
   &_title {
-    @extend %page__about_title;
+    @extend %page__title;
     width: 100%;
 
     &--principal {
-      @extend %page__about_title--principal;
+      @extend %page__title_principal;
       margin-bottom: 1rem;
       color: #d50000;
     }
 
     &--secondary {
-      @extend %page__about_title--secondary;
+      @extend %page__title_secondary;
       margin-bottom: 1rem;
     }
   }
@@ -31,7 +31,6 @@
   @media (min-width: 48rem) {
     flex-direction: row;
     flex-wrap: wrap;
-    // justify-content: flex-start;
   }
 
   &_item {
@@ -44,6 +43,7 @@
     margin-right: .5rem;
     color: #1a1a1a;
     box-shadow: 0 4px  3px -2px rgba(#1a1a1a, .25);
+    position: relative;
 
     @media (min-width: 48rem) {
       margin-right: 1rem;
@@ -60,24 +60,35 @@
     &:last-child {
       margin-bottom: .25rem !important;
     }
+    &--promo {
+      width: 3.5rem;
+      height: 2.5rem;
+      position: absolute;
+      bottom:.5rem;
+      background: #00c853;
+      color: #ffffff;
+      border-radius: .5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font: {
+        size: 1.25rem;
+        weight: 900;
+      }
+      .percent {
+        font-size: .75rem;
+        margin-left: .125rem;
+        margin-bottom: .125rem;
+      }
+
+    }
 
     &--top {
       display: flex;
       flex-direction: row;
-      height: 2rem;
       align-items: center;
       font-weight: 900;
       margin-bottom: .5rem;
-      &-icon {
-        margin-right: .5rem;
-        width: 2rem;
-        height: 2rem;
-        color: #d50000;
-        transform: rotateZ(-45deg) rotateY(180deg);
-        .happyhour {
-          color: #25ae65;
-        }
-      }
       &-title {
         font-size: 1.25rem;
         text-transform: uppercase;

@@ -19,6 +19,27 @@
         "button": "Suscribete"
       }
     },
+    "suscribe" : {
+      "title": "Suscribete a nuestros servicios",
+      "options": [
+        {
+          "label": "Noticias",
+          "value": "optionN"
+        },
+        {
+          "label": "Productos",
+          "value": "optionP"
+        },
+        {
+          "label": "Eventos",
+          "value": "optionE"
+        },
+        {
+          "label": "Capacitaciones",
+          "value": "optionC"
+        }
+      ]
+    },
     "about": {
       "find": {
         "title": "Conocenos",
