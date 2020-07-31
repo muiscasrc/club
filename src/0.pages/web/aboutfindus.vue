@@ -25,7 +25,9 @@
             {{$t('pages.about.find.labelNetwork')}}:<br />
             <div class="info__network">
               <span class="info__network_label">@muiscasrc</span>
-              <PluginNetwork class="info__network_links" title="" facebook="muiscasrc" twitter="muiscasrc" instagram="muiscasrc" size=24 />
+              <PluginNetwork class="info__network_links" title=""
+                facebook="muiscasrc" twitter="muiscasrc" instagram="muiscasrc"
+                :size="parseInt('24')" />
             </div>
           </div>
         </div>

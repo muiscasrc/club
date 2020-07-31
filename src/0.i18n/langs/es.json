@@ -7,8 +7,12 @@
     "find": "conocenos",
     "history": "historia",
     "object": "objetivo",
-    "shop": "tienda",
-    "product": "producto"
+    "shop": "Apoyanos",
+    "product": "producto",
+    "return": "Volver"
+  },
+  "general": {
+    "print": "imprimir"
   },
   "pages": {
     "home": {
@@ -18,6 +22,27 @@
         "title": "Para más noticias ingresa tu correo",
         "button": "Suscribete"
       }
+    },
+    "suscribe" : {
+      "title": "Suscribete a nuestros servicios",
+      "options": [
+        {
+          "label": "Noticias",
+          "value": "optionN"
+        },
+        {
+          "label": "Productos",
+          "value": "optionP"
+        },
+        {
+          "label": "Eventos",
+          "value": "optionE"
+        },
+        {
+          "label": "Capacitaciones",
+          "value": "optionC"
+        }
+      ]
     },
     "about": {
       "find": {
@@ -45,7 +70,26 @@
       }
     },
     "shop": {
-      "title": "Tienda Muisca"
+      "title": "Apoyanos con tu compra",
+      "return": "Volver",
+      "choose": "Escojer",
+      "buy": "Comprar",
+      "request": "Solicitar",
+      "description": "Descripcion",
+      "details": "Detalles"
+    },
+    "products": {},
+    "product": {},
+    "cart": {
+      "name": {
+        "first": "Nombres",
+        "last": "Apellidos"
+      },
+      "document": "Documento",
+      "phone": "Telefono",
+      "email": "Correo",
+      "address": "Direccion",
+      "total": "Total"
     }
   },
   "login": {

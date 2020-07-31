@@ -1,3 +1,18 @@
+%flex {
+  display:flex;
+  flex: 1;
+}
+
+%flex__column {
+  @extend %flex;
+  flex-direction: column
+}
+
+%flex__row {
+  @extend %flex;
+  flex-direction: row
+}
+
 %center__middle {
   display:flex;
   justify-content: center;
@@ -43,7 +58,7 @@
   }
 }
 
-%page__about {
+%page {
   font-family: 'Century Gothic';
   padding-top: 6rem;
   @extend %center__middle;
@@ -54,7 +69,7 @@
     flex-direction:row;
   }
   margin: 0 2rem;
-  &_title {
+  &__title {
     width: calc(100% - 2rem);
     height: 100%;
     display:flex;
@@ -63,7 +78,7 @@
       width: 30rem;
       flex-direction: column;
     }
-    &--principal {
+    &_principal {
       font-size: 3rem;
       font-weight: 900;
       margin-bottom: 2rem;
@@ -71,7 +86,7 @@
         font-size: 5rem;
       }
     }
-    &--secondary {
+    &_secondary {
       height: 100%;
       font-size: 1rem;
       color: #e6e6e6;
@@ -80,7 +95,7 @@
       overflow-y: auto;
     }
   }
-  &_background {
+  &__background {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -88,7 +103,7 @@
     width: auto;
     z-index: -1;
   }
-  &_navigate {
+  &__navigate {
     margin-bottom: 1rem;
   }
 }

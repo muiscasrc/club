@@ -1,0 +1,45 @@
+{
+  "data": {
+    "products": [
+        {
+          "id": 1,
+          "name": "Tee Rugby Offload Flexible Alto Negro",
+          "image": "https://contents.mediadecathlon.com/p1742183/k$aed0baecb34ac524f0babdbd49b46921/tee-rugby-offload-flexible-alto-negro.jpg",
+          "price": 38000,
+          "description": "Su forma aporta una excelente estabilidad del balón, con cualquier posición.",
+          "details": [
+            "UNISEX TODAS LAS EDADES",
+            "9 cm posición alta del balón. 6 cm posición baja del balón.",
+            "Botella/Cuerpo : 100.0% Poliuretano termoplástico"
+          ],
+          "promo": 0.2
+        },
+        {
+          "id": 2,
+          "name": "Balón De Rugby Offload R300 Talla 5 Negro",
+          "image": "https://contents.mediadecathlon.com/p1603004/k$42abd0579166b86a6c404f106eee9387/balon-de-rugby-offload-r300-talla-5-negro.jpg",
+          "price": 42000,
+          "description": "Este balón es perfecto para los entrenamientos gracias a su agarre y su resistencia, especialmente para principiantes y escuelas de rugby. Balón ideal para trabajar los primeros pases en el rugby",
+          "details": [
+            "La superficie tiene un relieve pronunciado para un excelente agarre del balón.",
+            "Este balón ofrece una trayectoria estable y correcta para la iniciación.",
+            "Costuras cosidas a mano y triple laminado, para proporcionar durabilidad."
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Hombreras Rugby Offload 100 Niños Azul Tortuga",
+          "image": "https://contents.mediadecathlon.com/p1680912/k$94846245de0774c2e0de9055428bda34/hombreras-rugby-offload-100-ninos-azul-tortuga.jpg",
+          "price": 94000,
+          "description": "Concebimos esta hombrera para ofrecer protección a los jóvenes jugadores durante los partidos y los entrenamientos (1 a 2 veces a la semana).<br/>Esta hombrera de rugby liviana y muy transpirable te protegerá eficazmente durante el juego gracias a su material 100% ventilado. Cumple las normas World Rugby.",
+          "details": [
+            "Juega protegido: las 9 zonas de protección de espuma EVA cumplen la norma WR.",
+            "Los bloques de espuma cosidos a la hombrera garantizan un movimiento moderado.",
+            "Entrégate a fondo: la tela mesh evacúa el sudor y seca rápidamente.",
+            "Más resistente: tela y costuras reforzadas, corte ajustado."
+          ],
+          "promo": 0.5
+        }
+      ]
+  }
+}

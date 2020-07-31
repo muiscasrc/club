@@ -1,0 +1,31 @@
+.plugin {
+  &__counter {
+    display: flex;
+    flex-direction: row;
+    margin: 0 1rem;
+    &_number {
+      height: 2rem;
+      width: 3rem;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      border-top: 1px solid;
+      border-bottom: 1px solid;
+    }
+    &_button {
+      width: 2rem;
+      height: 2rem;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      border: 1px solid;
+      &:first-child {
+        border-radius: .25rem 0 0 .25rem;
+      }
+      &:last-child {
+        border-radius: 0 .25rem .25rem 0;
+      }
+    }
+  }
+}
