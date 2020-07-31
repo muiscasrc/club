@@ -1,18 +1,18 @@
 .page__abouthistory {
-  @extend %page__about;
+  @extend %page;
 
   &_title {
-    @extend %page__about_title;
+    @extend %page__title;
     @media(min-width: 48rem) {
       width: 42rem;
     }
 
     &--principal {
-      @extend %page__about_title--principal;
+      @extend %page__title_principal;
     }
 
     &--secondary {
-      @extend %page__about_title--secondary;
+      @extend %page__title_secondary;
 
       .timeline {
         border-left: 3px solid #d50000;
@@ -68,6 +68,6 @@
   }
 
   &_navigate {
-    @extend %page__about_navigate
+    @extend %page__navigate
   }
 }
