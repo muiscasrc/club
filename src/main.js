@@ -26,9 +26,9 @@ Vue.config.productionTip = false
 
 // eslint-disable-next-line no-unused-vars
 const app = new Vue({
+  i18n,
   store,
   router,
-  i18n,
   render: h => h(App)
 }).$mount('#app')
 

@@ -37,6 +37,9 @@ const numberFormats = {
     currency: {
       style: 'currency',
       currency: 'USD'
+    },
+    percent: {
+      style: 'percent'
     }
   },
   es: {
@@ -45,6 +48,9 @@ const numberFormats = {
       currency: 'COP',
       currencySymbol: '$',
       minimumFractionDigits: 0
+    },
+    percent: {
+      style: 'percent'
     }
   }
 }

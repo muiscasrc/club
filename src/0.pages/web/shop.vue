@@ -6,13 +6,12 @@
       </div>
       <div class="page__shop_title--secondary shop__list">
         <div class="shop__list_item" v-for="(p, pi, pk) in products" :key="pk">
-          <div class="shop__list_item--promo" v-if="p.promo">{{p.promo}}<div class="percent">%</div>
-          </div>
+          <i18n-n v-if="p.promo" class="shop__list_item--promo" :value="parseFloat(p.promo)" format="percent" />
           <div class="shop__list_item--top">
             <div class="shop__list_item--top-title">
               {{p.name}}
             </div>
-            <i18n-n class="shop__list_item--top-price" :value="p.price" format="currency" tag="label">
+            <i18n-n class="shop__list_item--top-price" :value="parseFloat(p.price)" format="currency" tag="label">
             </i18n-n>
           </div>
           <div class="shop__list_item--bottom">
@@ -23,7 +22,7 @@
               {{p.description}}
             </div>
             <div class="shop__list_item--bottom-buy">
-              <Icons icon="Buy" class="icon" />
+              <Icons icon="CartAdd" class="icon" />
               <router-link :to="`/product/${p.id}`" class="icon">
                 <Icons icon="Eye" />
               </router-link>

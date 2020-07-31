@@ -3,16 +3,6 @@
 </template>
 <script>
 export default {
-
-  name: 'WebAbout',
-
-  data () {
-    return {
-
-    }
-  }
+  name: 'WebAbout'
 }
 </script>
-
-<style lang="css" scoped>
-</style>

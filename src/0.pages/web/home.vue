@@ -18,7 +18,13 @@
       <button @click="goSuscribe" class="page__home_suscribe--button" tabindex="1">{{$t('pages.home.suscribe.button')}}</button>
     </form>
     <div class="page__home_network">
-      <PluginNetwork title="" newPage sizeIcon=36 email="muiscasrc@gmail.com" emailPosition=2 facebook="muiscasrc" facebookPosition=3 instagram="muiscasrc" instagramPosition=4 twitter="muiscasrc" twitterPosition=5 youtube="muiscasrc" youtubePosition=6 />
+      <PluginNetwork title="" newPage
+      :sizeIcon="parseInt('36')"
+      email="muiscasrc@gmail.com" :emailPosition="parseInt('2')"
+      facebook="muiscasrc" :facebookPosition="parseInt('3')"
+      instagram="muiscasrc" :instagramPosition="parseInt('4')"
+      twitter="muiscasrc" :twitterPosition="parseInt('5')"
+      youtube="muiscasrc" :youtubePosition="parseInt('6')" />
     </div>
   </div>
 </template>

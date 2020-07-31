@@ -1,3 +1,18 @@
+%flex {
+  display:flex;
+  flex: 1;
+}
+
+%flex__column {
+  @extend %flex;
+  flex-direction: column
+}
+
+%flex__row {
+  @extend %flex;
+  flex-direction: row
+}
+
 %center__middle {
   display:flex;
   justify-content: center;
