@@ -7,6 +7,7 @@ import { dateTimeFormats, numberFormats } from './setup/format'
 Vue.use(VueI18n)
 
 const i18n = new VueI18n({
+  silentTranslationWarn: true,
   dateTimeFormats,
   numberFormats,
   locale: 'es',

@@ -1,34 +1,42 @@
 <template>
   <div class="page__cart">
     <div class="page__cart_invoice">
-      <div class="page__cart_invoice--header">
+      <div class="page__cart_invoice--header" @input="updateInvoiceData">
         <div class="page__cart_invoice--header-input">
-          <input type="text" name="name" v-model="invoice.data.name.first" />
-          <label for="name">{{$t('pages.cart.name.first')}}</label>
+          <input type="text" name="fitsr" v-model="invoice.data.name.first" />
+          <label for="fitsr">{{$t('pages.cart.name.first')}}</label>
         </div>
         <div class="page__cart_invoice--header-input">
-          <input type="text" name="name" v-model="invoice.data.name.last" />
-          <label for="name">{{$t('pages.cart.name.last')}}</label>
+          <input type="text" name="last" v-model="invoice.data.name.last" />
+          <label for="last">{{$t('pages.cart.name.last')}}</label>
         </div>
         <div class="page__cart_invoice--header-input">
-          <input type="text" name="document" v-model="invoice.data.document" />
+          <input type="number" name="document" v-model="invoice.data.document" />
           <label for="document">{{$t('pages.cart.document')}}</label>
         </div>
         <div class="page__cart_invoice--header-input">
-          <input type="text" name="phone" v-model="invoice.data.phone" />
+          <input type="tel" name="phone" v-model="invoice.data.phone" />
           <label for="phone">{{$t('pages.cart.phone')}}</label>
         </div>
         <div class="page__cart_invoice--header-input">
-          <input type="text" name="phone" v-model="invoice.data.email" />
-          <label for="phone">{{$t('pages.cart.email')}}</label>
+          <input type="email" name="email" v-model="invoice.data.email" />
+          <label for="email">{{$t('pages.cart.email')}}</label>
         </div>
         <div class="page__cart_invoice--header-input">
-          <input type="text" name="phone" v-model="invoice.data.address" />
-          <label for="phone">{{$t('pages.cart.address')}}</label>
+          <input type="text" name="address" v-model="invoice.data.address" />
+          <label for="address">{{$t('pages.cart.address')}}</label>
+        </div>
+        <div class="page__cart_invoice--header-input observations">
+          <textarea type="text" name="observations" v-model="invoice.data.observations" />
+          <label for="observations">{{$t('pages.cart.observations')}}</label>
         </div>
       </div>
       <div class="page__cart_invoice--products">
-        <div class="product" v-for="(product, value, index, key) in invoice.products" :key="key">
+        <div
+          class="product"
+          v-for="(product, value, index, key) in invoice.products"
+          :key="key"
+        >
           <div class="product__info">
             <img class="product__info_image" :src="product.image" />
             <div class="product__info_name">{{product.name}}</div>
@@ -58,58 +66,108 @@
         </div>
       </div>
       <div class="page__cart_invoice--actions">
-        <router-link class="actions__action" to="/shop">
-          {{$t('navigate.return')}}
-        </router-link>
-        <div class="actions__action" :title="$t('general.print')">
-          <Icons icon="Print" :title="$t('general.print')" class="icon"/>
+        <router-link class="actions__action" to="/shop">{{$t('navigate.return')}}</router-link>
+        <div class="actions__action" :title="$t('general.print')" @click="printInvoice">
+          <Icons icon="Print" :title="$t('general.print')" class="icon" />
         </div>
-        <div class="actions__action" :title="$t('pages.shop.request')">
-          <Icons icon="Cash" :title="$t('pages.shop.request')" class="icon"/>
+        <div class="actions__action" :title="$t('general.request')" @click="requestProducts">
+          <Icons icon="Email" :title="$t('general.request')" class="icon" />
         </div>
+        <!-- <div class="actions__action" :title="$t('pages.shop.request')">
+          <Icons icon="Cash" :title="$t('pages.shop.request')" class="icon" />
+        </div> -->
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import axios from 'axios'
 import LStorage from '@/0.assets/scripts/Storage'
-const lstorage = new LStorage()
 
-// Dummy data for visualization
-const dataProducts = require('@/0.assets/scripts/productsDummy.json').data
-  .products
+import Email from '@/0.assets/scripts/smtp.js'
+const lstorage = new LStorage()
 
 export default {
   name: 'Cart',
   data () {
     return {
       invoice: {},
+      products: [],
       total: 0
     }
   },
-  created () {
-    if (lstorage.read('invoice') === undefined || lstorage.read('invoice') === null) {
+  async created () {
+    if (
+      lstorage.read('invoice') === undefined ||
+      lstorage.read('invoice') === null
+    ) {
       this.$router.push('/shop')
     }
   },
-  mounted () {
+  async mounted () {
+    await this.getProducts()
     this.invoice = lstorage.read('invoice')
     this.parseProducts()
+    this.getMinimalProducts()
   },
   methods: {
+    async getProducts () {
+      await axios
+        .get(process.env.VUE_APP_CDN_SHOP)
+        .then((data) => (this.products = data.data))
+    },
     parseProducts () {
       this.invoice.products = this.invoice.products.map((product) => {
-        product.image =
-          dataProducts.filter((p) => (p.id === product.id ? p : ''))[0].image ||
-          require('@/0.assets/images/general/icon.png')
-        product.promo =
-          dataProducts.filter((p) => (p.id === product.id ? p : ''))[0].promo ||
-          0
+        this.products.filter(productFiltered => {
+          if (productFiltered.id === product.id) {
+            product.image = productFiltered.image || require('@/0.assets/images/general/icon.png')
+            product.promo = productFiltered.promo || 0
+          }
+        })
         return {
           ...product
         }
       })
+    },
+    getMinimalProducts () {
+      var productsMinimal = this.invoice.products.filter(
+        (product, index, array) =>
+          array.findIndex((t) => t.id === product.id) === index
+      )
+      productsMinimal.forEach((el, index) => {
+        el.cant = this.invoice.products
+          .filter((product) => {
+            return el.id === product.id
+          })
+          .reduce((collect, curent) => {
+            return collect + curent.cant
+          }, 0)
+      })
+      this.invoice.products = productsMinimal
+      lstorage.save('invoice', this.invoice)
+    },
+    updateInvoiceData () {
+      if (this.invoice.data !== lstorage.readContext('invoice', 'data')) {
+        lstorage.save('invoice', this.invoice)
+      }
+    },
+    printInvoice () {
+      window.print()
+    },
+    requestProducts () {
+      Email.send({
+        Host: 'smtp.elasticemail.com',
+        Port: 2525,
+        Username: 'muiscasrc@gmail.com',
+        Password: 'FF53192FFB2F4E69B08BA986815A671813EE',
+        To: this.invoice.data.email,
+        From: 'muiscasrc@gmail.com',
+        Subject: document.querySelector('.page__cart_invoice').innerHTML.toString(),
+        Body: 'Factura de compra'
+      }).then(
+        message => alert(message)
+      )
     }
   },
   computed: {
