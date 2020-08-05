@@ -1,8 +1,9 @@
 export default {
   name: 'PluginCounter',
-  data () {
-    return {
-      counter: 0
+  props: {
+    counter: {
+      type: Number,
+      default: 0
     }
   },
   methods: {

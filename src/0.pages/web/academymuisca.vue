@@ -1,12 +1,5 @@
 <template>
   <div>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    academia muisca
   </div>
 </template>
 

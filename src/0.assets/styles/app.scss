@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
 * {
 
   &,
@@ -22,7 +24,6 @@
 
   &::-webkit-scrollbar-track {
     background: none;
-    // margin: .5rem;
   }
 }
 
@@ -39,7 +40,7 @@ body,
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  font-family: sans-serif, arial, helvetia;
+  font-family: 'Questrial', sans-serif, arial, helvetia;
   font-size: 16px;
 }
 

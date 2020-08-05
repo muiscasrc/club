@@ -26,8 +26,8 @@
             <div class="info__network">
               <span class="info__network_label">@muiscasrc</span>
               <PluginNetwork class="info__network_links" title=""
-                facebook="muiscasrc" twitter="muiscasrc" instagram="muiscasrc"
-                :size="parseInt('24')" />
+                :facebook="profile" :twitter="profile" :instagram="profile"
+                :size="24" />
             </div>
           </div>
         </div>
@@ -45,7 +45,12 @@
 <script>
 export default {
 
-  name: 'WebAboutFindUs'
+  name: 'WebAboutFindUs',
+  data () {
+    return {
+      profile: 'muiscasrc'
+    }
+  }
 }
 
 </script>
