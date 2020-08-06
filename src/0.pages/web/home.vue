@@ -13,18 +13,18 @@
     </div>
     <form action="" class="page__home_suscribe">
       <div class="page__home_suscribe--input">
-        <input type="text" :placeholder="$t('pages.home.suscribe.title')" v-model="email" tabindex="0">
+        <input type="text" :placeholder="$t('pages.home.suscribe.title')" v-model="mail" tabindex="0">
       </div>
       <button @click="goSuscribe" class="page__home_suscribe--button" tabindex="1">{{$t('pages.home.suscribe.button')}}</button>
     </form>
     <div class="page__home_network">
       <PluginNetwork title="" newPage
       :sizeIcon="parseInt('36')"
-      email="muiscasrc@gmail.com" :emailPosition="parseInt('2')"
-      facebook="muiscasrc" :facebookPosition="parseInt('3')"
-      instagram="muiscasrc" :instagramPosition="parseInt('4')"
-      twitter="muiscasrc" :twitterPosition="parseInt('5')"
-      youtube="muiscasrc" :youtubePosition="parseInt('6')" />
+      email="muiscasrc@gmail.com" :emailPosition="2"
+      :facebook="profile" :facebookPosition="3"
+      :instagram="profile" :instagramPosition="4"
+      :twitter="profile" :twitterPosition="5"
+      :youtube="profile" :youtubePosition="6" />
     </div>
   </div>
 </template>
@@ -35,7 +35,8 @@ export default {
 
   data () {
     return {
-      email: undefined
+      mail: undefined,
+      profile: 'muiscasrc'
     }
   },
   methods: {

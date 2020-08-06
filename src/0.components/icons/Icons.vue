@@ -1,11 +1,13 @@
 <template>
-  <component
-    :is="icon"
-    :title="title"
-    :decorative="decorative"
-    :fillColor="fillColor"
-    :size="size"
-  />
+  <keep-alive>
+    <component
+      :is="icon"
+      :title="title"
+      :decorative="decorative"
+      :fillColor="fillColor"
+      :size="size"
+    />
+  </keep-alive>
 </template>
 
 <script>

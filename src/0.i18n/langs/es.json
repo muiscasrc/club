@@ -12,7 +12,8 @@
     "return": "Volver"
   },
   "general": {
-    "print": "imprimir"
+    "print": "Imprimir",
+    "request": "Solicitar"
   },
   "pages": {
     "home": {
@@ -76,10 +77,14 @@
       "buy": "Comprar",
       "request": "Solicitar",
       "description": "Descripcion",
-      "details": "Detalles"
+      "details": "Detalles",
+      "view": "Ver"
     },
     "products": {},
-    "product": {},
+    "product": {
+      "addLabel": "Agregar",
+      "chooseLabel": ""
+    },
     "cart": {
       "name": {
         "first": "Nombres",
@@ -89,7 +94,8 @@
       "phone": "Telefono",
       "email": "Correo",
       "address": "Direccion",
-      "total": "Total"
+      "total": "Total",
+      "observations": "Observaciones"
     }
   },
   "login": {

@@ -1,10 +1,5 @@
 <template>
   <div class="page__suscribe">
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
     <div class="page__suscribe_title">
       <div class="page__suscribe_title--primary">
         {{$t('pages.suscribe.title')}}
