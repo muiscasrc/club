@@ -1,7 +1,7 @@
 <template>
   <div class="page__cart">
     <div class="page__cart_invoice">
-      <div class="page__cart_invoice--header" @input="updateInvoiceData">
+      <form class="page__cart_invoice--header" id="email" @input="updateInvoiceData" @submit.prevent="requestProducts">
         <div class="page__cart_invoice--header-input">
           <input type="text" name="fitsr" v-model="invoice.data.name.first" />
           <label for="fitsr">{{$t('pages.cart.name.first')}}</label>
@@ -30,7 +30,7 @@
           <textarea type="text" name="observations" v-model="invoice.data.observations" />
           <label for="observations">{{$t('pages.cart.observations')}}</label>
         </div>
-      </div>
+      </form>
       <div class="page__cart_invoice--products">
         <div
           class="product"
@@ -70,9 +70,9 @@
         <div class="actions__action" :title="$t('general.print')" @click="printInvoice">
           <Icons icon="Print" :title="$t('general.print')" class="icon" />
         </div>
-        <div class="actions__action" :title="$t('general.request')" @click="requestProducts">
+        <button type="submit" form="email" class="actions__action submit" :title="$t('general.request')">
           <Icons icon="Email" :title="$t('general.request')" class="icon" />
-        </div>
+        </button>
         <!-- <div class="actions__action" :title="$t('pages.shop.request')">
           <Icons icon="Cash" :title="$t('pages.shop.request')" class="icon" />
         </div> -->
@@ -84,8 +84,8 @@
 <script>
 import axios from 'axios'
 import LStorage from '@/0.assets/scripts/Storage'
+import emailjs from 'emailjs-com'
 
-import Email from '@/0.assets/scripts/smtp.js'
 const lstorage = new LStorage()
 
 export default {
@@ -156,14 +156,39 @@ export default {
       window.print()
     },
     requestProducts () {
-      Email.send({
-        SecureToken: 'cf628a96-c6fe-4072-ab28-c2e671c24192',
-        To: this.invoice.data.email,
-        From: 'muiscasrc@gmail.com',
-        Subject: 'Mensaje de prueba',
-        Body: 'Factura de compra'
-      }).then(
-        message => alert(message)
+      emailjs.init(process.env.VUE_APP_EMAIL_ID)
+      var parseProducts = `<table style="text-align:center;width:100%">
+          <caption style="font-size: 1.25rem;font-weight: bold">DETALLES DE LA COMPRA</caption>
+          <thead>
+            <th>Descripción</th>
+            <th>Cant</th>
+            <th>Precio</th>
+            <th>Descuento</th>
+            <th>Subtotal</th>
+          </thead>
+          <tbody>
+          ${this.invoice.products.map(p =>
+            `<tr>
+              <td style="text-align:left">${p.name}</td>
+              <td style="text-align:center">${p.cant}</td>
+              <td style="text-align:center">${this.$n(p.price, 'currency')}</td>
+              <td style="text-align:center">${this.$n(p.promo, 'percent')}</td>
+              <td style="text-align:right">${this.$n(p.cant * (1 - p.promo) * p.price, 'currency')}</td>
+            </tr>`)}
+          </tbody>
+          <tfoot>
+            <tr style="font-size: 1.5rem;font-weight: bold; text-align:right">
+              <td colspan="4" style="text-align:left">Total</td><td>${this.$n(this.getTotal, 'currency')}</td>
+            </tr>
+          </tfoot>
+        </table>`
+      emailjs.send(
+        'gmail',
+        'shop',
+        {
+          data: this.invoice.data,
+          products: parseProducts
+        }
       )
     }
   },
