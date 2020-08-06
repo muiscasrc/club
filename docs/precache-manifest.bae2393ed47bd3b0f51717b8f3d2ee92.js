@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "72ed8cbd558ae1baa1e5",
+    "revision": "46dea55ab15472f52628",
     "url": "/club/css/app~._src_0.a.82ce803d.css"
   },
   {
@@ -12,32 +12,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/club/img/icon.2f989709.png"
   },
   {
-    "revision": "092acb8ee2b7a5e79de72181ace499e8",
+    "revision": "ac3aa9abaa0361b7671bc1ac928fda7a",
     "url": "/club/index.html"
   },
   {
-    "revision": "e6240ffcef4253579523",
-    "url": "/club/js/Icons~._node_modules_vue-material-design-icons_A.90d3dbc5.js"
+    "revision": "f822d94f027f7fedf437",
+    "url": "/club/js/Icons~._node_modules_vue-material-design-icons_A.a44b901a.js"
   },
   {
     "revision": "b68f640a5255475b829a",
     "url": "/club/js/app~._multi ._src_main.js~1f0c83ab.a1ce395b.js"
   },
   {
-    "revision": "72ed8cbd558ae1baa1e5",
-    "url": "/club/js/app~._src_0.a.2aabf52b.js"
+    "revision": "46dea55ab15472f52628",
+    "url": "/club/js/app~._src_0.a.f4dcc2e5.js"
   },
   {
-    "revision": "069b461b149d90affe83",
-    "url": "/club/js/app~._src_0.p.636f50a0.js"
+    "revision": "e9a5ffb1fcf00de4a566",
+    "url": "/club/js/app~._src_A.f01f879c.js"
   },
   {
-    "revision": "24a66b032246a6e0ee54",
-    "url": "/club/js/app~._src_A.97e51cc1.js"
-  },
-  {
-    "revision": "c0863fd28696b0fe2045",
-    "url": "/club/js/app~._src_m.01bfbd89.js"
+    "revision": "338de76eb311d4e24293",
+    "url": "/club/js/app~._src_m.88b3cfb5.js"
   },
   {
     "revision": "63210c0bbdb3e5645c19",
@@ -48,8 +44,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/club/js/chunk-vendors~._node_modules_c.4f541c20.js"
   },
   {
-    "revision": "ee8ec14d1909e563ed3d",
-    "url": "/club/js/chunk-vendors~._node_modules_v.c999920e.js"
+    "revision": "e6f043baedcc4fcdc309",
+    "url": "/club/js/chunk-vendors~._node_modules_v.068cc3ea.js"
   },
   {
     "revision": "3046cb3ef58917726185",

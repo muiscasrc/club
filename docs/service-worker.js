@@ -1,4 +1,4 @@
-importScripts("/club/precache-manifest.948da381f6f1ca5a0284814069da20f2.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+importScripts("/club/precache-manifest.bae2393ed47bd3b0f51717b8f3d2ee92.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 const cacheName = 'websiteMuiscasRCCache'
 
