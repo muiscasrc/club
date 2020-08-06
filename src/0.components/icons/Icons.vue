@@ -13,6 +13,10 @@
 const IconsComponents = {
   Menu: () => import(/* webpackChunkName: "Icons" */ 'vue-material-design-icons/Menu'),
   Close: () => import(/* webpackChunkName: "Icons" */ 'vue-material-design-icons/Close'),
+  Buy: () => import(/* webpackChunkName: "Icons" */ 'vue-material-design-icons/Basket'),
+  Eye: () => import(/* webpackChunkName: "Icons" */ 'vue-material-design-icons/Eye'),
+  Star: () => import(/* webpackChunkName: "Icons" */ 'vue-material-design-icons/Star'),
+  HappyHour: () => import(/* webpackChunkName: "Icons" */ 'vue-material-design-icons/TagFaces'),
   Locale: () => import(/* webpackChunkName: "Icons" */ 'vue-material-design-icons/MapMarker'),
   Globe: () => import(/* webpackChunkName: "Icons" */ 'vue-material-design-icons/Web'),
   Email: () => import(/* webpackChunkName: "Icons" */ 'vue-material-design-icons/Email'),

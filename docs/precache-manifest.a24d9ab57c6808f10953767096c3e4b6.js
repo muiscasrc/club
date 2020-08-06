@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "be89e24675bc3ef67c69",
-    "url": "/club/css/app~._m.ef48ec13.css"
+    "revision": "9a8d4cf7d6179de67dcd",
+    "url": "/club/css/app~._m.681b1810.css"
   },
   {
     "revision": "2f98970986677ecb7797422c608a1ccc",
     "url": "/club/icon.png"
   },
   {
-    "revision": "4fd9ee593380814d6c70ebaaa4370695",
+    "revision": "9fae02a68787316ed577bc746c872d55",
     "url": "/club/index.html"
   },
   {
-    "revision": "360ba06bf9e24ed04a25",
-    "url": "/club/js/Icons~._node_modules_vue-material-design-icons_C.9f37ed19.js"
+    "revision": "ea07925c3bc16b7f5dc4",
+    "url": "/club/js/Icons~._node_modules_vue-material-design-icons_B.01890f3f.js"
   },
   {
-    "revision": "be89e24675bc3ef67c69",
-    "url": "/club/js/app~._m.063180d8.js"
+    "revision": "9a8d4cf7d6179de67dcd",
+    "url": "/club/js/app~._m.256a1c21.js"
   },
   {
     "revision": "82580581213f12b6c0da",

@@ -14,8 +14,10 @@
       display: flex;
       flex: 1;
       flex-direction: column;
-      justify-content: center;
 
+      @media (min-width: 48rem) {
+        justify-content: center;
+      }
       &-info {
         display: flex;
         flex-direction: row;

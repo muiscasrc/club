@@ -23,11 +23,12 @@
   &_background {
     @extend %page__about_background;
     height: 40%;
+    opacity: .5;
+    @media (min-width: 48rem) {
+      height: 100%;
+      opacity: 1;
+    }
     &--image {
-      opacity: .5;
-      @media (min-width: 48rem) {
-        opacity: 1;
-      }
     }
   }
 
