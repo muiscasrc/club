@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "46dea55ab15472f52628",
-    "url": "/club/css/app~._src_0.a.82ce803d.css"
+    "revision": "9feb98dc80223204557f",
+    "url": "/club/css/app~._m.82ce803d.css"
   },
   {
     "revision": "2f98970986677ecb7797422c608a1ccc",
@@ -12,7 +12,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/club/img/icon.2f989709.png"
   },
   {
-    "revision": "ac3aa9abaa0361b7671bc1ac928fda7a",
+    "revision": "a1340529febcb6ffb8a6ff25ad05d91b",
     "url": "/club/index.html"
   },
   {
@@ -20,20 +20,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/club/js/Icons~._node_modules_vue-material-design-icons_A.a44b901a.js"
   },
   {
-    "revision": "b68f640a5255475b829a",
-    "url": "/club/js/app~._multi ._src_main.js~1f0c83ab.a1ce395b.js"
-  },
-  {
-    "revision": "46dea55ab15472f52628",
-    "url": "/club/js/app~._src_0.a.f4dcc2e5.js"
+    "revision": "9feb98dc80223204557f",
+    "url": "/club/js/app~._m.4267c55f.js"
   },
   {
     "revision": "e9a5ffb1fcf00de4a566",
     "url": "/club/js/app~._src_A.f01f879c.js"
   },
   {
-    "revision": "338de76eb311d4e24293",
-    "url": "/club/js/app~._src_m.88b3cfb5.js"
+    "revision": "c288059dccb9aaca04f9",
+    "url": "/club/js/app~._src_m.18101404.js"
   },
   {
     "revision": "63210c0bbdb3e5645c19",
