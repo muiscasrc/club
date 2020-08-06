@@ -5,7 +5,7 @@
       <Icons :icon="getIconMenu" />
     </div>
     <div :class="['partial__navigate_items', getViewMenu ? 'show' : '']">
-      <router-link v-for="(r, ri, rk) in routes" v-if="r.menu !== false" :key="rk" :to="r.path" :class="['partial__navigate_items--item']" @click.native="viewMenu">
+      <router-link v-for="(r, ri, rk) in routes" v-show="r.menu !== false" :key="rk" :to="r.path" :class="['partial__navigate_items--item']" @click.native="viewMenu">
         {{ $t(`navigate.${r.name}`) }}
       </router-link>
 

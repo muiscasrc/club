@@ -1,22 +1,36 @@
 <template>
-  <component
-    :is="icon"
-    :title="title"
-    :decorative="decorative"
-    :fillColor="fillColor"
-    :size="size"
-  />
+  <keep-alive>
+    <component
+      :is="icon"
+      :title="title"
+      :decorative="decorative"
+      :fillColor="fillColor"
+      :size="size"
+    />
+  </keep-alive>
 </template>
 
 <script>
 
 const IconsComponents = {
+  // Navigate
   Menu: () => import(/* webpackChunkName: "Icons" */ 'vue-material-design-icons/Menu'),
   Close: () => import(/* webpackChunkName: "Icons" */ 'vue-material-design-icons/Close'),
-  Buy: () => import(/* webpackChunkName: "Icons" */ 'vue-material-design-icons/Basket'),
+  // Arrows
+  Plus: () => import(/* webpackChunkName: "Icons" */ 'vue-material-design-icons/Plus'),
+  Minus: () => import(/* webpackChunkName: "Icons" */ 'vue-material-design-icons/Minus'),
+  ArrowLeft: () => import(/* webpackChunkName: "Icons" */ 'vue-material-design-icons/ArrowLeft'),
+  ArrowRight: () => import(/* webpackChunkName: "Icons" */ 'vue-material-design-icons/ArrowRight'),
+  // Shop
+  Print: () => import(/* webpackChunkName: "Icons" */ 'vue-material-design-icons/Printer'),
+  Cash: () => import(/* webpackChunkName: "Icons" */ 'vue-material-design-icons/Cash'),
+  CartAdd: () => import(/* webpackChunkName: "Icons" */ 'vue-material-design-icons/CartArrowDown'),
+  CartVoid: () => import(/* webpackChunkName: "Icons" */ 'vue-material-design-icons/CartOutline'),
+  CartFull: () => import(/* webpackChunkName: "Icons" */ 'vue-material-design-icons/Cart'),
   Eye: () => import(/* webpackChunkName: "Icons" */ 'vue-material-design-icons/Eye'),
   Star: () => import(/* webpackChunkName: "Icons" */ 'vue-material-design-icons/Star'),
   HappyHour: () => import(/* webpackChunkName: "Icons" */ 'vue-material-design-icons/TagFaces'),
+  // Icons Network
   Locale: () => import(/* webpackChunkName: "Icons" */ 'vue-material-design-icons/MapMarker'),
   Globe: () => import(/* webpackChunkName: "Icons" */ 'vue-material-design-icons/Web'),
   Email: () => import(/* webpackChunkName: "Icons" */ 'vue-material-design-icons/Email'),

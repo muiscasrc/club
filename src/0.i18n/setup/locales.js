@@ -1,7 +1,7 @@
 const langs = []
 const requireLangs = require.context('../', true, /\w+\.json$/)
 
-requireLangs.keys().forEach(async (lang) => {
+requireLangs.keys().forEach((lang) => {
   langs.push(lang)
 // FIX: Automated import languages
 // locales[lang.replace(/[., /]/g, '')] = await import(`${lang}`)

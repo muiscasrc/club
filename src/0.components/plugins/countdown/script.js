@@ -37,8 +37,10 @@ export default {
       var end = new Date(enjoy)
       this.days = Math.floor(enjoy / (1000 * 60 * 60 * 24))
       this.hours = end.getHours() < 10 ? `0${end.getHours()}` : end.getHours()
-      this.minutes = end.getMinutes() < 10 ? `0${end.getMinutes()}` : end.getMinutes()
-      this.seconds = end.getSeconds() < 10 ? `0${end.getSeconds()}` : end.getSeconds()
+      this.minutes =
+        end.getMinutes() < 10 ? `0${end.getMinutes()}` : end.getMinutes()
+      this.seconds =
+        end.getSeconds() < 10 ? `0${end.getSeconds()}` : end.getSeconds()
     }
   }
 }

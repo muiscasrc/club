@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
 * {
 
   &,
@@ -22,7 +24,6 @@
 
   &::-webkit-scrollbar-track {
     background: none;
-    // margin: .5rem;
   }
 }
 
@@ -36,20 +37,11 @@ body,
   display: flex;
   flex-direction: column;
   color: #e6e6e6;
-  width: 100%;
-  height: 100%;
-  font-family: sans-serif, arial, helvetia;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Questrial', sans-serif, arial, helvetia;
   font-size: 16px;
-}
-
-.app {
-  &__main {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    height: 100%;
-    overflow: hidden;
-  }
 }
 
 img,

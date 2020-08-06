@@ -1,39 +1,53 @@
+%flex {
+  display: flex;
+  flex: 1;
+}
+
+%flex__column {
+  @extend %flex;
+  flex-direction: column;
+}
+
+%flex__row {
+  @extend %flex;
+  flex-direction: row;
+}
+
 %center__middle {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 %navigate__item {
-    width: 8rem;
-    height: 1.875rem;
-    margin-right: .5rem;
-    @extend %center__middle;
-    font-size: .75rem;
-    text-transform: uppercase;
-    &:hover{
-      box-shadow:inset 0 -2px #d50000;
-      color: #d50000;
-    }
-
-    &.active {
-      box-shadow:inset 0 -2px #d50000;
-      color: #d50000;
-    }
-
-    &[href*="login"] {
-      border-radius: .25rem;
-      border:1px solid #d50000;
-      color: #d50000;
-      margin-right: 0;
-      box-shadow: none;
-      &:hover {
-        background: #d50000;
-        color: #e6e6e6;
-      }
-    }
+  width: 8rem;
+  height: 1.875rem;
+  margin-right: 0.5rem;
+  @extend %center__middle;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  &:hover {
+    box-shadow: inset 0 -2px #d50000;
+    color: #d50000;
   }
 
+  &.active {
+    box-shadow: inset 0 -2px #d50000;
+    color: #d50000;
+  }
+
+  &[href*="login"] {
+    border-radius: 0.25rem;
+    border: 1px solid #d50000;
+    color: #d50000;
+    margin-right: 0;
+    box-shadow: none;
+    &:hover {
+      background: #d50000;
+      color: #e6e6e6;
+    }
+  }
+}
 
 %navigate {
   display: flex;
@@ -43,44 +57,45 @@
   }
 }
 
-%page__about {
-  font-family: 'Century Gothic';
+%page {
+  // font-family: "Century Gothic";
   padding-top: 6rem;
   @extend %center__middle;
   justify-content: space-between;
   width: 100%;
+  height: 100%;
+
   flex-direction: column;
-  @media(min-width: 48rem) {
-    flex-direction:row;
+  @media (min-width: 48rem) {
+    flex-direction: row;
   }
-  margin: 0 2rem;
-  &_title {
+  &__title {
     width: calc(100% - 2rem);
     height: 100%;
-    display:flex;
+    display: flex;
     flex-direction: column;
-    @media(min-width: 48rem) {
+    @media (min-width: 48rem) {
       width: 30rem;
       flex-direction: column;
     }
-    &--principal {
+    &_principal {
       font-size: 3rem;
       font-weight: 900;
       margin-bottom: 2rem;
-      @media(min-width: 48rem) {
+      @media (min-width: 48rem) {
         font-size: 5rem;
       }
     }
-    &--secondary {
+    &_secondary {
       height: 100%;
       font-size: 1rem;
       color: #e6e6e6;
-      flex:1;
+      flex: 1;
       overflow: hidden;
       overflow-y: auto;
     }
   }
-  &_background {
+  &__background {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -88,7 +103,7 @@
     width: auto;
     z-index: -1;
   }
-  &_navigate {
+  &__navigate {
     margin-bottom: 1rem;
   }
 }
