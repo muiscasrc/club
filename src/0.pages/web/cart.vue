@@ -157,13 +157,10 @@ export default {
     },
     requestProducts () {
       Email.send({
-        Host: 'smtp.elasticemail.com',
-        Port: 2525,
-        Username: 'muiscasrc@gmail.com',
-        Password: 'FF53192FFB2F4E69B08BA986815A671813EE',
+        SecureToken: 'cf628a96-c6fe-4072-ab28-c2e671c24192',
         To: this.invoice.data.email,
         From: 'muiscasrc@gmail.com',
-        Subject: document.querySelector('.page__cart_invoice').innerHTML.toString(),
+        Subject: 'Mensaje de prueba',
         Body: 'Factura de compra'
       }).then(
         message => alert(message)

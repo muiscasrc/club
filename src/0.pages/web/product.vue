@@ -150,7 +150,6 @@ export default {
       }
     },
     addToCart () {
-      console.log(this.count)
       if (this.count !== 0) {
         var tplProduct = {
           name: this.product.name,
