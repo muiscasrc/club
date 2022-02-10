@@ -38,7 +38,7 @@
     "eslint-plugin-vue": "^6.2.2",
     "firebase": "^7.17.1",
     "firebaseui": "^4.6.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "prerender-spa-plugin": "^3.4.0",
     "sass-loader": "^9.0.2",
     "vue-material-design-icons": "^4.7.1",
